@@ -10,7 +10,7 @@ let Contact = () => {
     setTimeout(() => setLoading(false), 2000);
   }, []);
   return (
-    <div>
+    <div className="min-h-screen bg-red-400 flex justify-center items-center text-4xl text-white">
       Contact
     </div>
   );
