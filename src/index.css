@@ -4,6 +4,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
 
+
+
+
 body {
   font-family: 'Caudex', serif;
 }
+
+
+.bg-navbar {
+  background-color: white;
+}
+.bg-image {
+  background-image: url("./assets/image/background-navbar.jpg");
+  /* opacity: 0; */
+  animation: fadeIn 1s ease-in-out ;
+}
+.inactive {
+  /* opacity: 0; */
+  animation: fadeOut 1s  ease-in-out  ;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+

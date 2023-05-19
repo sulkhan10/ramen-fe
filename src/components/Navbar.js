@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../index.css";
-
+import backgroundNavbar from "../assets/image/background-navbar.jpg";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,23 +17,24 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarColorClass = scrolled ? "bg-white " : "bg-transparent";
-  const navbarTextClass = scrolled ? "text-[#717171] hover:border-b-4 hover:border-red-700 " : "text-gray-100 hover:border-b-4 hover:border-gray-100 border-gray-100";
+  const navbarBackgroundClass = scrolled ? " bg-image  active" : "bg-transparent inactive";
+
+  const navbarTextClass = scrolled ? "text-[#717171] hover:border-b-4 hover:border-red-700 hover:text-gray-900" : " hover:border-b-4 hover:border-gray-100 border-gray-100 text-gray-100 hover:text-gray-50";
   const ramenClass = scrolled
     ? "text-red-500 text-2xl transition-all duration-300"
     : "text-green-600 text-4xl transition-all duration-300";
   const activeClassName =
-    "text-xl  font-bold tracking-wide transition-colors duration-200 text-yellow-500 border-b-4 border-red-700" + " " + navbarTextClass;
+    "text-xl  font-bold tracking-wide transition-colors duration-200  border-b-4 border-red-700" + " " + navbarTextClass;
   const inactiveClassname =
-    "text-xl  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 hover:border-green-700" + " " + navbarTextClass;
+    "text-xl  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 " + " " + navbarTextClass;
 
   return (
     <div>
       <div
-        className={` fixed h-28 right-0 left-0 z-40 py-4 ${navbarColorClass} flex flex-col justify-between items-center`}
-        style={{
-          transition: "background-color 0.6s ease-out", // Add transition CSS property
-        }}
+        className={` fixed h-28 right-0 left-0 z-40 py-4  flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+        // style={{
+        //   transition: "all 0.6s ease-out", // Add transition CSS property
+        // }}
       >
         <NavLink
            to="/"

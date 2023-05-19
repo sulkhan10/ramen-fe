@@ -12,9 +12,18 @@ let Homepage = () => {
     setTimeout(() => setLoading(false), 2000);
   }, []);
   return (
-    <div className="min-h-screen bg-red-400 flex justify-center items-center text-4xl text-white">
-    Homepage
+    // <div className="min-h-screen bg-gray-100 flex justify-center items-center text-4xl text-white">
+    // Homepage
+    <div class="relative flex items-center 
+        justify-center h-screen overflow-hidden">
+        <video src=
+"https://joy.videvo.net/videvo_files/video/premium/video0253/large_watermarked/1000_00859_preview.mp4"
+            autoplay="{true}" loop muted
+            className="absolute z-10 w-auto 
+            min-w-full min-h-full max-w-none">
+        </video>
     </div>
+    // </div>
   );
 };
 export default Homepage;
