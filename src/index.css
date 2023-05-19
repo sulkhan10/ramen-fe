@@ -25,6 +25,10 @@ body {
   animation: fadeOut 1s  ease-in-out  ;
 }
 
+.fade {
+  animation: fadeOut 1s  ease-in-out  ;
+
+}
 @keyframes fadeIn {
   0% { opacity: 0; }
   50% { opacity: .5; }

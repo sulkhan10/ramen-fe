@@ -17,39 +17,222 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarBackgroundClass = scrolled ? " bg-image  active" : "bg-transparent inactive";
+  // State to track the mobile menu toggle
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // State to track the screen width
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const navbarTextClass = scrolled ? "text-[#717171] hover:border-b-4 hover:border-red-700 hover:text-gray-900" : " hover:border-b-4 hover:border-gray-100 border-gray-100 text-gray-100 hover:text-gray-50";
+  // Function to toggle the mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Function to update the screen width on resize
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Add event listener to handle resize
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      // Cleanup the event listener on component unmount
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const navbarBackgroundClass = scrolled
+    ? " bg-image  active"
+    : "bg-transparent inactive";
+
+  const navbarTextClass = scrolled
+    ? "text-[#717171] hover:border-b-4 hover:border-red-700 hover:text-gray-900"
+    : " hover:border-b-4 hover:border-gray-100 border-gray-100 text-gray-100 hover:text-gray-50";
   const ramenClass = scrolled
     ? "text-red-500 text-2xl transition-all duration-300"
     : "text-green-600 text-4xl transition-all duration-300";
   const activeClassName =
-    "text-xl  font-bold tracking-wide transition-colors duration-200  border-b-4 border-red-700" + " " + navbarTextClass;
+    "text-xl  font-bold tracking-wide transition-colors duration-200  border-b-4 border-red-700" +
+    " " +
+    navbarTextClass;
   const inactiveClassname =
-    "text-xl  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 " + " " + navbarTextClass;
+    "text-xl  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 " +
+    " " +
+    navbarTextClass;
 
   return (
     <div>
-      <div
-        className={` fixed h-28 right-0 left-0 z-40 py-4  flex flex-col justify-between items-center ${navbarBackgroundClass}`}
-        // style={{
-        //   transition: "all 0.6s ease-out", // Add transition CSS property
-        // }}
-      >
-        <NavLink
-           to="/"
-           className={({ isActive }) =>
-             isActive ? activeClassName : inactiveClassname
-           }
-         >
-           <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
-         </NavLink>
-          <ul className="flex items-center mx-16 gap-16 space-x-10 lg:flex">
+      {/* Hamburger menu button */}
+      {screenWidth <= 768 && !isMobileMenuOpen && (
+        <div
+          className={`fixed h-[8vh] right-0 left-0 z-40 py-4 flex  justify-around items-center ${navbarBackgroundClass}`}
+        >
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? activeClassName : inactiveClassname
+            }
+          >
+            <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
+          </NavLink>
+          <button
+            className="lg:hidden"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+              {!scrolled && (
+                <svg
+                  className="w-6 h-6 text-gray-900 cursor-pointer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+                  )}
+                {scrolled && (
+                <svg
+                  className="w-6 h-6 text-gray-900 cursor-pointer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+                  )}
+          </button>
+        </div>
+      )}
+
+      {/* Mobile menu */}
+      {isMobileMenuOpen && screenWidth <= 768 && (
+        <div className="">
+          <div
+            className={`fixed h-[22vh] right-0 left-0 z-40 py-4 flex flex-col  ${navbarBackgroundClass}`}
+          >
+            <div className="flex justify-around items-around">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeClassName : inactiveClassname 
+                }
+              >
+                <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
+              </NavLink>
+              <button
+                className="lg:hidden"
+                onClick={toggleMobileMenu}
+                aria-label="Toggle mobile menu"
+              >
+                {!scrolled && (
+                <svg
+                  className="w-6 h-6 text-gray-900 cursor-pointer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+                  )}
+                {scrolled && (
+                <svg
+                  className="w-6 h-6 text-gray-900 cursor-pointer"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+                  )}
+              </button>
+            </div>
+            <div className="flex justify-around items-around">
+              <div className=""></div>
+              <ul className=" flex flex-col items-end">
+                <li>
+                  <NavLink
+                    to="/reservation"
+                    className={({ isActive }) =>
+                      isActive ? activeClassName : inactiveClassname
+                    }
+                  >
+                    Reservation
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/menu"
+                    className={({ isActive }) =>
+                      isActive ? activeClassName : inactiveClassname
+                    }
+                  >
+                    Menu
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive ? activeClassName : inactiveClassname
+                    }
+                  >
+                    Contact
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      isActive ? activeClassName : inactiveClassname
+                    }
+                  >
+                    About
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+      {screenWidth > 768 && (
+        <div
+          className={`fixed h-28 right-0 left-0 z-40 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+        >
+          {" "}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? activeClassName : inactiveClassname
+            }
+          >
+            <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
+          </NavLink>
+          <ul
+            className="flex justify-between items-center md:w-2/3 lg:w-1/2 xl:w-1/3
+            "
+          >
             <li>
               <NavLink
                 to="/reservation"
-                className={({ isActive}) =>
-                  isActive ? activeClassName : inactiveClassname 
+                className={({ isActive }) =>
+                  isActive ? activeClassName : inactiveClassname
                 }
               >
                 Reservation
@@ -86,11 +269,10 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-
-       
         </div>
+      )}
     </div>
+    // </div>
   );
 };
-
 export default Navbar;
