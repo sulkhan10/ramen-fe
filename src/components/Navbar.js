@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../index.css";
 import backgroundNavbar from "../assets/image/background-navbar.jpg";
+import logoWhite from "../assets/image/logo-white.png";
+import logoColor from "../assets/image/logo-color.png";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -60,22 +62,36 @@ const Navbar = () => {
     "text-xl  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 " +
     " " +
     navbarTextClass;
+  const activeClassNameMobile =
+    "text-md  font-bold tracking-wide transition-colors duration-200  border-b-4 border-red-700" +
+    " " +
+    navbarTextClass;
+  const inactiveClassnameMobile =
+    "text-md  font-bold tracking-wide  transition-colors duration-200 0 hover:border-b-4 " +
+    " " +
+    navbarTextClass;
 
   return (
     <div>
       {/* Hamburger menu button */}
       {screenWidth <= 768 && !isMobileMenuOpen && (
         <div
-          className={`fixed h-[8vh] right-0 left-0 z-40 py-4 flex  justify-around items-center ${navbarBackgroundClass}`}
+          className={`fixed  right-0 left-0 z-40 py-2 flex  justify-around items-center ${navbarBackgroundClass}`}
         >
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? activeClassName : inactiveClassname
-            }
+           
           >
-            <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
-          </NavLink>
+  {scrolled && (
+                <img
+                  className="w-30 h-12"
+                  src={logoColor}/>  
+                )}
+               {!scrolled && (
+                <img
+                className="w-30 h-12"
+                src={logoWhite}/>  
+                )}          </NavLink>
           <button
             className="lg:hidden"
             onClick={toggleMobileMenu}
@@ -117,16 +133,23 @@ const Navbar = () => {
       {isMobileMenuOpen && screenWidth <= 768 && (
         <div className="">
           <div
-            className={`fixed h-[22vh] right-0 left-0 z-40 py-4 flex flex-col  ${navbarBackgroundClass}`}
+            className={`fixed  right-0 left-0 z-40 py-2 flex flex-col  ${navbarBackgroundClass}`}
           >
             <div className="flex justify-around items-around">
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : inactiveClassname 
-                }
+                onClick={toggleMobileMenu}
               >
-                <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
+               {scrolled && (
+                <img
+                  className="w-30 h-12"
+                  src={logoColor}/>  
+                )}
+               {!scrolled && (
+                <img
+                className="w-30 h-12"
+                src={logoWhite}/>  
+                )}
               </NavLink>
               <button
                 className="lg:hidden"
@@ -170,8 +193,10 @@ const Navbar = () => {
                   <NavLink
                     to="/reservation"
                     className={({ isActive }) =>
-                      isActive ? activeClassName : inactiveClassname
+                      isActive ? activeClassNameMobile : inactiveClassnameMobile
                     }
+                    onClick={toggleMobileMenu}
+
                   >
                     Reservation
                   </NavLink>
@@ -180,8 +205,10 @@ const Navbar = () => {
                   <NavLink
                     to="/menu"
                     className={({ isActive }) =>
-                      isActive ? activeClassName : inactiveClassname
-                    }
+                    isActive ? activeClassNameMobile : inactiveClassnameMobile
+                  }
+                  onClick={toggleMobileMenu}
+
                   >
                     Menu
                   </NavLink>
@@ -190,8 +217,10 @@ const Navbar = () => {
                   <NavLink
                     to="/contact"
                     className={({ isActive }) =>
-                      isActive ? activeClassName : inactiveClassname
-                    }
+                    isActive ? activeClassNameMobile : inactiveClassnameMobile
+                  }
+                  onClick={toggleMobileMenu}
+
                   >
                     Contact
                   </NavLink>
@@ -200,8 +229,10 @@ const Navbar = () => {
                   <NavLink
                     to="/about"
                     className={({ isActive }) =>
-                      isActive ? activeClassName : inactiveClassname
-                    }
+                    isActive ? activeClassNameMobile : inactiveClassnameMobile
+                  }
+                  onClick={toggleMobileMenu}
+
                   >
                     About
                   </NavLink>
@@ -218,12 +249,18 @@ const Navbar = () => {
           {" "}
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? activeClassName : inactiveClassname
-            }
+          
           >
-            <h1 className={`font-bold ${ramenClass}`}>Ramen</h1>
-          </NavLink>
+  {scrolled && (
+                <img
+                  className="h-12"
+                  src={logoColor}/>  
+                )}
+               {!scrolled && (
+                <img
+                className="h-20 mb-4"
+                src={logoWhite}/>  
+                )}          </NavLink>
           <ul
             className="flex justify-between items-center md:w-2/3 lg:w-1/2 xl:w-1/3
             "
