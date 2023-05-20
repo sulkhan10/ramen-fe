@@ -18,12 +18,12 @@ body {
 .bg-image-navbar {
   background-image: url("./assets/image/background-navbar-2.jpg");
   /* opacity: 0; */
-  animation: fadeIn 1s ease-in-out ;
+  /* animation: fadeIn 1s ease-in-out ; */
 }
 .bg-image-navbar-mobile {
   background-image: url("./assets/image/background-navbar-mobile.jpg");
   /* opacity: 0; */
-  animation: fadeIn 1s ease-in-out ;
+  /* animation: fadeIn 1s ease-in-out ; */
   background-size: cover;
   background-repeat: no-repeat;
 }
