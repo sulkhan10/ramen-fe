@@ -19,7 +19,7 @@ let Homepage = () => {
         <video src=
 "https://joy.videvo.net/videvo_files/video/premium/video0253/large_watermarked/1000_00859_preview.mp4"
             autoplay="{true}" loop muted
-            className="absolute z-10 w-auto 
+            className="absolute  w-auto 
             min-w-full min-h-full max-w-none">
         </video>
     </div>

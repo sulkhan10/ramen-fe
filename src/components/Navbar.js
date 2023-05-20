@@ -71,7 +71,7 @@ const Navbar = () => {
     <div>
       {screenWidth <= 768 && !isMobileMenuOpen && (
         <div
-          className={`fixed  right-0 left-0 z-40 py-2 flex  justify-around items-center ${navbarBackgroundClass}`}
+          className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass}`}
         >
           <NavLink to="/">
             {scrolled && <img className="w-30 h-12" src={logoColor} />}
@@ -116,10 +116,10 @@ const Navbar = () => {
 
       {isMobileMenuOpen && screenWidth <= 768 && (
         <div className="">
-<div className="h-screen fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide">
+          <div className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-10">
             <div className="relative py-2">
-              <div className="h-screen absolute inset-0 bg-image-navbar opacity-50 -z-20"></div>
-              <div className="h-screen absolute inset-0 bg-black opacity-70 -z-10"></div>
+              <div className="min-h-screen absolute inset-0 bg-image-navbar opacity-50 -z-20"></div>
+              <div className=" absolute inset-0 bg-black opacity-70 -z-10"></div>
 
               <div className="flex justify-around items-around">
                 <NavLink to="/" onClick={toggleMobileMenu}>
@@ -145,7 +145,7 @@ const Navbar = () => {
                 </button>
               </div>
 
-              <ul className="h-96 flex flex-col items-center justify-center gap-6">
+              <ul className="min-h-screen flex flex-col items-center justify-center gap-6">
                 <li>
                   <NavLink
                     to="/reservation"
@@ -158,8 +158,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/menu"
-                                       className={inactiveClassnameMobile}
-
+                    className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
                     Menu
@@ -168,8 +167,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/contact"
-                                       className={inactiveClassnameMobile}
-
+                    className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
                     Contact
@@ -178,8 +176,7 @@ const Navbar = () => {
                 <li>
                   <NavLink
                     to="/about"
-                                       className={inactiveClassnameMobile}
-
+                    className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
                     About
@@ -192,7 +189,7 @@ const Navbar = () => {
       )}
       {screenWidth > 768 && (
         <div
-          className={`fixed h-28 right-0 left-0 z-40 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+          className={`fixed h-28 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
         >
           {" "}
           <NavLink to="/">
