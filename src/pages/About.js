@@ -2,10 +2,24 @@ import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
 import MoonLoader from "react-spinners/MoonLoader";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
+import backgroundAbout from "../assets/image/background-about.jpg";
+import backgroundSectionOne from "../assets/image/bg-section-1.jpg";
+import backgroundSectionTwo from "../assets/image/bg-section-2.jpg";
+import backgroundSectionThree from "../assets/image/bg-section-3.jpg";
+import backgroundSectionFour from "../assets/image/bg-section-4.jpg";
+import backgroundSectionFive from "../assets/image/bg-section-5.jpg";
+import backgroundSectionSix from "../assets/image/bg-section-6.jpg";
+import backgroundSectionSeven from "../assets/image/bg-section-7.jpg";
+import backgroundSectionEight from "../assets/image/bg-section-8.jpg";
+import backgroundSectionNine from "../assets/image/bg-section-9.jpg";
+import backgroundSectionTen from "../assets/image/bg-section-10.jpg";
+import backgroundSectionEleven from "../assets/image/bg-section-11.jpg";
+
 AOS.init();
+
 let About = () => {
   let [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -13,142 +27,165 @@ let About = () => {
     setTimeout(() => setLoading(false), 2000);
   }, []);
   return (
-    <div className="min-h-screen bg-red-400 flex flex-col pt-[30vh] justify-center items-center text-md text-white">
-      <div className="p-12 " data-aos="fade-up">
-        <h2>
-          Ramen Shop located in Indonesia that brings traditional various
-          Chinese noodles
+    <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171]">
+      <img
+        src={backgroundAbout}
+        alt="background"
+        className="  w-full h-screen object-cover"
+      />
+      <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-20"></div>
+      {/* <div
+        className="relative p-12 text-[#717171]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)), url("${backgroundSectionOne}")`,
+          // backgroundSize: 'cover',
+          backgroundPosition: "right",
+          backgroundRepeat: "no-repeat",
+        }}
+        data-aos="fade-up"
+      >
+        <div
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          Indonesian-Chinese Fusion Style Ramen
         </h2>
-        <p>
-          The idea of "Ricey Silo" was born out of an enthusiasm for great food
-          and culture. In Yunnan China, we appreciate the fruits of our nature.
-          Yunnan people live a life where they believe you can achieve
-          satisfaction without having much.
+        <p className="mb-4">
+          The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+          great food and culture. In Indonesia, we embrace the rich culinary
+          heritage of both Indonesian and Chinese cuisines. We believe that
+          blending these two culinary traditions creates a unique and flavorful
+          experience.
+        </p>
+        <p className="mb-4">
+          Our fusion-style Ramen showcases the best of both worlds. We combine
+          traditional Indonesian spices and ingredients with the art of Chinese
+          noodle-making to create a truly satisfying and delicious bowl of
+          ramen.
+        </p>
+        <p className="mb-4">
+          At Ramen Restaurant G, we take pride in our carefully crafted recipes
+          and attention to detail. Our broth is simmered for hours using a
+          combination of Indonesian spices and Chinese cooking techniques,
+          resulting in a rich and flavorful base. We source the freshest
+          ingredients, including local produce and quality meats, to ensure the
+          highest quality in every bowl.
         </p>
         <p>
-          This is our attitude while preparing and serving our food. After years
-          of continuous preparation and improvements, now we are excited to
-          serve you a bowl of Yunnan’s authentic crossing-the-bridge noodles.
+          The noodles in our fusion ramen are a combination of Indonesian and
+          Chinese styles. We use thin, chewy noodles that have been infused with
+          Indonesian spices, giving them a unique and aromatic flavor. These
+          noodles perfectly complement the rich broth and toppings, creating a
+          harmonious blend of flavors.
         </p>
         <p>
-          We invite you to join us on a cultural food expedition to taste our
-          fresh and timely prepared ingredients, served with a base broth made
-          by simmering quality chicken bones for up to 10 hours, then cooked
-          with our chewy rice noodles at your table.
+          Join us at Ramen Restaurant G for an unforgettable culinary
+          experience. Our Indonesian-Chinese fusion style ramen will take you on
+          a journey of flavors, combining the best of both cuisines in a single
+          bowl. Taste the harmony of Indonesian and Chinese influences and
+          indulge in the exquisite flavors that only fusion cuisine can offer.
         </p>
-        <p>
-          We serve our noodles using nutritious ingredients, leading to a result
-          that requires little seasoning but is extraordinarily tasty.
+      </div> */}
+      <div
+        className="relative p-12 text-[#717171] flex flex-col justify-center items-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
+          // backgroundSize: 'cover',
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(80px)",
+        }}
+        data-aos="fade-up"
+      >
+        <div
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <div className="w-full md:w-3/4 ">
+          <h2 className="text-xl md:text-3xl font-bold mt-2  md:mt-6 text-center">
+          The Idea Behind Ramen Restaurant G: 
+        </h2>
+          <h2 className="text-3xl font-bold mb-4 md:mb-6 text-center">
+          Celebrating Food and Culture
+        </h2>
+        <p className="text-lg md:text-xl mb-4">
+          Ramen Restaurant G is a culinary venture that originated from a deep
+          passion for exceptional food and rich cultural experiences. We believe
+          that food has the power to bring people together and create memorable
+          moments.
         </p>
-        <h3>小满</h3>
-        <h3>小满米线</h3>
+        <p className="text-lg md:text-xl mb-4">
+          Our journey began with a genuine appreciation for the diverse culinary
+          traditions across different cultures. We wanted to create a space
+          where food enthusiasts could explore and indulge in a wide range of
+          flavors, while also celebrating the cultural heritage behind each
+          dish.
+        </p>
+        <p className="text-lg md:text-xl mb-4">
+          At Ramen Restaurant G, we pay homage to the culinary arts and cultural
+          traditions that have shaped our menu. We meticulously curate our
+          ingredients, sourcing them from local farmers and suppliers who share
+          our commitment to quality and sustainability.
+        </p>
+        <p className="text-lg md:text-xl mb-4">
+          Our chefs and culinary experts are dedicated to crafting dishes that
+          highlight the authenticity and depth of flavors from various culinary
+          traditions. From traditional recipes handed down through generations
+          to innovative fusion creations, our menu is a reflection of our
+          passion for culinary excellence.
+        </p>
+        <p className="text-lg md:text-xl mb-4">
+          We invite you to join us on a gastronomic adventure where you can
+          savor the remarkable flavors, aromas, and textures of our carefully
+          curated dishes. Each bite at Ramen Restaurant G is a journey through
+          culinary traditions, allowing you to experience the rich tapestry of
+          flavors that our diverse world has to offer.
+        </p>
+        </div>
       </div>
-      <div className="p-12 " data-aos="fade-up">
-        <h3>The Authenticity</h3>
-        <p>
-          Crossing the Bridge Rice Noodle is one of the most revered and
-          well-known dishes in Yunnan Province, China. The history of this style
-          of noodle dates back over 100 years and was listed as an intangible
-          cultural heritage of Kunming (capital city of Yunnan Province). The
-          dish is served with a large bowl of boiling hot broth, separate from
-          the soup ingredients which are then added to create an extremely fresh
-          aroma for the diner.
-        </p>
-        <p>
-          The soul of the delicacy is the broth. Made with chicken bone, pork
-          bone, and ham, the soup needs to be simmered for more than 10 hours to
-          get a rich, gelatinous texture. Then a thin layer of glistening
-          chicken oil is created on top to insulate the soup and keep the whole
-          bowl piping hot.
-        </p>
-        <p>
-          The soup ingredients are served separately on a cutting board or
-          plate. Common ingredients include thin slices of fresh meat, chunks of
-          chicken, strips of bean curd sheets, shredded chives, raw quail eggs,
-          and rice noodles. Once added into the broth, the heat of the hot soup
-          will make all the ingredients cooked in a short time and soon you can
-          enjoy it.
-        </p>
-        <h3>小满</h3>
-        <h3>小满米线</h3>
-      </div>
-      <div className="p-12 " data-aos="fade-up">
-        <h3>The Legend</h3>
-        <p>
-          Long ago, just south of the Yunnan city of Mengzixian, there was a
-          beautiful lake with water as clear as jade. In the center of the lake,
-          there was a small island covered in green bamboo saplings and giant
-          trees whose ancient stalks reached the heavens. Known for its natural
-          beauty and pleasant atmosphere, the small island drew many neighboring
-          scholars seeking a tranquil place to study for the imperial exams.
-        </p>
-        <p>
-          Among these scholars, there was a particularly diligent student who
-          spent many days studying on the island. Every day, his wife made the
-          long walk to the lake, crossing the bridge to the island to bring him
-          his meals. However, he was frequently so engrossed in his studies that
-          he only remembered to eat long after the food had grown cold.
-        </p>
-        <p>
-          Due to his irregular eating habits, the scholar became noticeably
-          thin, and his warm-hearted wife grew very worried. One day, she had an
-          idea. She butchered a plump hen to make a hot chicken soup and
-          separately prepared her husband’s favorite local rice noodles,
-          seasonings, and ingredients.
-        </p>
-        <p>
-          She brought them over the bridge in different bowls, combining them
-          just before he was ready to eat. On its own, the chicken broth stayed
-          hot enough to cook the noodles and other ingredients and created a
-          thin layer of oil that kept the whole bowl piping hot. It worked. The
-          scholar loved the hot noodle soup, and the wife started crossing the
-          bridge every day with these bowls.
-        </p>
-        <p>
-          Eventually, the scholar succeeded in passing the imperial exams and,
-          remembering his wife’s great kindness and hospitality, joked that it
-          was his wife’s wonderful noodles that helped him pass the prestigious
-          and famously difficult exams.
-        </p>
-        <p>
-          As you may have guessed, the wife’s daily walk across the bridge to
-          deliver her husband’s meals inspired the name “Crossing the Bridge
-          Noodles”. The story was passed on by word of mouth through the
-          generations and has come to symbolize affection, endearment, and
-          admiration.
-        </p>
-        <h3>小满</h3>
-        <h3>小满米线</h3>
-      </div>
-      <div className="p-12 " data-aos="fade-up">
+    
+      {/* <div
+        className="relative p-12 text-[#717171]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.7)), url("${backgroundSectionFour}")`,
+          // backgroundSize: 'cover',
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+        }}
+        data-aos="fade-up"
+      >
+        {" "}
+        <div
+          className="absolute inset-0 bg-white bg-opacity-60 backdrop-filter backdrop-blur-xs"
+          style={{ zIndex: -1 }}
+        ></div>{" "}
         <h3>The Process</h3>
-        <ol>
-          <li>
+          <h3>
             Separate the quail egg yolk from egg white, put the egg yolk into
             the boiling soup.
-          </li>
-          <li>
+          </h3>
+          <h3>
             Batter the raw chicken, fish, and beef slices in slightly beaten egg
             whites to tenderize the meat.
-          </li>
-          <li>
+          </h3>
+          <h3>
             Quickly dip the meats a few times in boiling broth, as this will
             intensify the flavor.
-          </li>
-          <li>
+          </h3>
+          <h3>
             Then, place all ingredients into the broth and add chili oil based
             on preference.
-          </li>
-          <li>
+          </h3>
+          <h3>
             Use chopsticks to pick up the rice noodles and place them into the
             broth.
-          </li>
-          <li>
+          </h3>
+          <h3>
             Slurp the noodles, enjoy the texture and flavor that melts in your
             mouth. When the noodles are finished, take your time and enjoy.
-          </li>
-        </ol>
-      </div>
+          </h3>
+      </div> */}
     </div>
   );
 };

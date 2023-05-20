@@ -16,7 +16,7 @@ body {
   background-color: white;
 }
 .bg-image-navbar {
-  background-image: url("./assets/image/background-navbar.jpg");
+  background-image: url("./assets/image/background-navbar-2.jpg");
   /* opacity: 0; */
   animation: fadeIn 1s ease-in-out ;
 }
@@ -82,14 +82,5 @@ body {
   /* Additional styling for the text */
 }
 
-.social-media a {
-  color: #fff;
-  /* Additional styling for the social media links */
-}
 
-.wechat-qr img {
-  width: 100px;
-  height: 100px;
-  /* Additional styling for the WeChat QR code */
-}
 
