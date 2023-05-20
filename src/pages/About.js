@@ -19,6 +19,7 @@ import backgroundSectionTen from "../assets/image/bg-section-10.jpg";
 import backgroundSectionEleven from "../assets/image/bg-section-11.jpg";
 import cardImageOne from "../assets/image/card-about-1.jpg";
 import cardImageTwo from "../assets/image/card-about-2.jpg";
+import cardImageThree from "../assets/image/card-about-3.jpg";
 
 AOS.init();
 
@@ -95,62 +96,64 @@ let About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row w-full">
-      <div
-  data-aos="fade-right"
-  className="w-full sm:w-2/5 flex-grow h-full flex items-center text-[#717171] justify-center"
->
-  <img src={cardImageOne} alt="background" className="h-full w-full object-cover max-h-[685px]" />
+      <div className="flex flex-col sm:flex-row">
+  <div
+    data-aos="fade-right"
+    className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+  >
+    <img
+      src={cardImageThree}
+      alt="background"
+      className="h-full w-full object-cover"
+    />
+  </div>
+
+  <div
+    data-aos="fade-right"
+    className="sm:w-3/5 h-full flex items-center text-[#717171] justify-center mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+  >
+    <div className="text-[#717171] ">
+      <h2 className="text-3xl font-bold my-6 text-center">
+        Indonesian-Chinese Fusion Style Ramen
+      </h2>
+      <p className="text-lg md:text-xl mb-4">
+        The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+        great food and culture. In Indonesia, we embrace the rich culinary
+        heritage of both Indonesian and Chinese cuisines. We believe that
+        blending these two culinary traditions creates a unique and flavorful
+        experience.
+      </p>
+      <p className="text-lg md:text-xl mb-4">
+        Our fusion-style Ramen showcases the best of both worlds. We combine
+        traditional Indonesian spices and ingredients with the art of Chinese
+        noodle-making to create a truly satisfying and delicious bowl of ramen.
+      </p>
+      <p className="text-lg md:text-xl mb-4">
+        At Ramen Restaurant G, we take pride in our carefully crafted recipes
+        and attention to detail. Our broth is simmered for hours using a
+        combination of Indonesian spices and Chinese cooking techniques,
+        resulting in a rich and flavorful base. We source the freshest
+        ingredients, including local produce and quality meats, to ensure the
+        highest quality in every bowl.
+      </p>
+      <p className="text-lg md:text-xl mb-4">
+        The noodles in our fusion ramen are a combination of Indonesian and
+        Chinese styles. We use thin, chewy noodles that have been infused with
+        Indonesian spices, giving them a unique and aromatic flavor. These
+        noodles perfectly complement the rich broth and toppings, creating a
+        harmonious blend of flavors.
+      </p>
+      {/* <p className="text-lg md:text-xl mb-4">
+        Join us at Ramen Restaurant G for an unforgettable culinary experience.
+        Our Indonesian-Chinese fusion style ramen will take you on a journey of
+        flavors, combining the best of both cuisines in a single bowl. Taste
+        the harmony of Indonesian and Chinese influences and indulge in the
+        exquisite flavors that only fusion cuisine can offer.
+      </p> */}
+    </div>
+  </div>
 </div>
 
-  <div data-aos="fade-left" className="w-full sm:w-3/5 flex-grow h-full text-[#717171] sm:max-h-[685px] sm:overflow-scroll sm:overflow-x-clip scrollbar-hide" >
-    <div className="relative p-12 text-[#717171]">
-            <div
-              className="absolute inset-0 bg-white bg-opacity-90 backdrop-filter backdrop-blur-sm"
-              style={{ zIndex: -1 }}
-            ></div>
-            <h2 className="text-3xl font-bold mb-6 text-center">
-              Indonesian-Chinese Fusion Style Ramen
-            </h2>
-          <p className="text-lg md:text-xl mb-4">
-              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
-              great food and culture. In Indonesia, we embrace the rich culinary
-              heritage of both Indonesian and Chinese cuisines. We believe that
-              blending these two culinary traditions creates a unique and
-              flavorful experience.
-            </p>
-          <p className="text-lg md:text-xl mb-4">
-              Our fusion-style Ramen showcases the best of both worlds. We
-              combine traditional Indonesian spices and ingredients with the art
-              of Chinese noodle-making to create a truly satisfying and
-              delicious bowl of ramen.
-            </p>
-          <p className="text-lg md:text-xl mb-4">
-              At Ramen Restaurant G, we take pride in our carefully crafted
-              recipes and attention to detail. Our broth is simmered for hours
-              using a combination of Indonesian spices and Chinese cooking
-              techniques, resulting in a rich and flavorful base. We source the
-              freshest ingredients, including local produce and quality meats,
-              to ensure the highest quality in every bowl.
-            </p>
-            <p className="text-lg md:text-xl mb-4">
-              The noodles in our fusion ramen are a combination of Indonesian
-              and Chinese styles. We use thin, chewy noodles that have been
-              infused with Indonesian spices, giving them a unique and aromatic
-              flavor. These noodles perfectly complement the rich broth and
-              toppings, creating a harmonious blend of flavors.
-            </p>
-            <p className="text-lg md:text-xl mb-4">
-              Join us at Ramen Restaurant G for an unforgettable culinary
-              experience. Our Indonesian-Chinese fusion style ramen will take
-              you on a journey of flavors, combining the best of both cuisines
-              in a single bowl. Taste the harmony of Indonesian and Chinese
-              influences and indulge in the exquisite flavors that only fusion
-              cuisine can offer.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
