@@ -49,8 +49,8 @@ const Navbar = () => {
     : "bg-transparent inactive";
 
   const navbarTextClass = scrolled
-    ? "text-[#717171] hover:border-b-4 hover:border-red-700 hover:text-gray-900"
-    : " hover:border-b-4 hover:border-gray-100 border-gray-100 text-gray-100 hover:text-gray-50";
+    ? "text-[#717171] hover:border-b-4 hover:border-red-700 hover:text-gray-900 pb-3"
+    : " hover:border-b-4 hover:border-gray-100 border-gray-100 text-gray-100 hover:text-gray-50 pb-3";
   const ramenClass = scrolled
     ? "text-red-500 text-2xl transition-all duration-300"
     : "text-green-600 text-4xl transition-all duration-300";
@@ -189,7 +189,7 @@ const Navbar = () => {
       )}
       {screenWidth > 768 && (
         <div
-          className={`fixed h-28 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+          className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
         >
           {" "}
           <NavLink to="/">
