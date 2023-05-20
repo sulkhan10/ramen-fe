@@ -145,7 +145,7 @@ const Navbar = () => {
                 </button>
               </div>
 
-              <ul className="min-h-screen flex flex-col items-center justify-center gap-6">
+              <ul className="min-h-screen flex flex-col items-center justify-center gap-6 pb-[20vh]">
                 <li>
                   <NavLink
                     to="/reservation"
