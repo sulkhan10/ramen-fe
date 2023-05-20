@@ -15,10 +15,17 @@ body {
 .bg-navbar {
   background-color: white;
 }
-.bg-image {
+.bg-image-navbar {
   background-image: url("./assets/image/background-navbar.jpg");
   /* opacity: 0; */
   animation: fadeIn 1s ease-in-out ;
+}
+.bg-image-navbar-mobile {
+  background-image: url("./assets/image/background-navbar-mobile.jpg");
+  /* opacity: 0; */
+  animation: fadeIn 1s ease-in-out ;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .inactive {
   /* opacity: 0; */
@@ -40,3 +47,13 @@ body {
   100% { opacity: 1; }
 }
 
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
