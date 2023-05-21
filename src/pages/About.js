@@ -20,6 +20,7 @@ import backgroundSectionEleven from "../assets/image/bg-section-11.jpg";
 import cardImageOne from "../assets/image/card-about-1.jpg";
 import cardImageTwo from "../assets/image/card-about-2.jpg";
 import cardImageThree from "../assets/image/card-about-3.jpg";
+import logoIcon from "../assets/image/logo-icon.png";
 
 AOS.init();
 
@@ -60,33 +61,33 @@ let About = () => {
           <h2 className="text-3xl font-bold mb-4 md:mb-6 text-center">
             Celebrating Food and Culture
           </h2>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4 text-center">
             Ramen Restaurant G is a culinary venture that originated from a deep
             passion for exceptional food and rich cultural experiences. We
             believe that food has the power to bring people together and create
             memorable moments.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4 text-center">
             Our journey began with a genuine appreciation for the diverse
             culinary traditions across different cultures. We wanted to create a
             space where food enthusiasts could explore and indulge in a wide
             range of flavors, while also celebrating the cultural heritage
             behind each dish.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4 text-center">
             At Ramen Restaurant G, we pay homage to the culinary arts and
             cultural traditions that have shaped our menu. We meticulously
             curate our ingredients, sourcing them from local farmers and
             suppliers who share our commitment to quality and sustainability.
           </p>
-          <p className="text-lg mb-4">
+          {/* <p className="text-lg mb-4">
             Our chefs and culinary experts are dedicated to crafting dishes that
             highlight the authenticity and depth of flavors from various
             culinary traditions. From traditional recipes handed down through
             generations to innovative fusion creations, our menu is a reflection
             of our passion for culinary excellence.
-          </p>
-          <p className="text-lg mb-4">
+          </p> */}
+          <p className="text-lg mb-4 text-center">
             We invite you to join us on a gastronomic adventure where you can
             savor the remarkable flavors, aromas, and textures of our carefully
             curated dishes. Each bite at Ramen Restaurant G is a journey through
@@ -96,66 +97,159 @@ let About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row"
+      <div
+        className="flex flex-col sm:flex-row"
         // data-aos="fade-right"
       >
-  <div
-    data-aos="fade-right"
-    className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
-  >
-    <img
-      src={cardImageThree}
-      alt="background"
-      className="h-full w-full object-cover"
-    />
-  </div>
+        <div
+          data-aos="fade-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+        >
+          <img
+            src={cardImageThree}
+            alt="background"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-  <div
-    data-aos="flip-right"
-    className="sm:w-3/5 h-full flex items-center text-[#717171] justify-center mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
-  >
-    <div className="text-[#717171] ">
-      <h2 className="text-3xl font-bold my-6 text-center">
-        Indonesian-Chinese Fusion Style Ramen
-      </h2>
-      <p className="text-lg md:text-lg mb-4">
-        The idea of "Ramen Restaurant G" was born out of an enthusiasm for
-        great food and culture. In Indonesia, we embrace the rich culinary
-        heritage of both Indonesian and Chinese cuisines. We believe that
-        blending these two culinary traditions creates a unique and flavorful
-        experience.
-      </p>
-      <p className="text-lg md:text-lg mb-4">
-        Our fusion-style Ramen showcases the best of both worlds. We combine
-        traditional Indonesian spices and ingredients with the art of Chinese
-        noodle-making to create a truly satisfying and delicious bowl of ramen.
-      </p>
-      <p className="text-lg md:text-lg mb-4">
-        At Ramen Restaurant G, we take pride in our carefully crafted recipes
-        and attention to detail. Our broth is simmered for hours using a
-        combination of Indonesian spices and Chinese cooking techniques,
-        resulting in a rich and flavorful base. We source the freshest
-        ingredients, including local produce and quality meats, to ensure the
-        highest quality in every bowl.
-      </p>
-      <p className="text-lg md:text-lg mb-4">
-        The noodles in our fusion ramen are a combination of Indonesian and
-        Chinese styles. We use thin, chewy noodles that have been infused with
-        Indonesian spices, giving them a unique and aromatic flavor. These
-        noodles perfectly complement the rich broth and toppings, creating a
-        harmonious blend of flavors.
-      </p>
-      {/* <p className="text-lg md:text-xl mb-4">
+        <div
+          data-aos="flip-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20" />
+              <h2 className="text-3xl font-bold my-6 ">
+                Indonesian-Chinese Fusion Style Ramen
+              </h2>
+            </div>
+            {/* <div className="flex flex-col items-center justify-center"> */}
+
+            <p className="text-lg md:text-lg mb-4">
+              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+              great food and culture. In Indonesia, we embrace the rich culinary
+              heritage of both Indonesian and Chinese cuisines. We believe that
+              blending these two culinary traditions creates a unique and
+              flavorful experience.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Our fusion-style Ramen showcases the best of both worlds. We
+              combine traditional Indonesian spices and ingredients with the art
+              of Chinese noodle-making to create a truly satisfying and
+              delicious bowl of ramen.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              At Ramen Restaurant G, we take pride in our carefully crafted
+              recipes and attention to detail. Our broth is simmered for hours
+              using a combination of Indonesian spices and Chinese cooking
+              techniques, resulting in a rich and flavorful base. We source the
+              freshest ingredients, including local produce and quality meats,
+              to ensure the highest quality in every bowl.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              The noodles in our fusion ramen are a combination of Indonesian
+              and Chinese styles. We use thin, chewy noodles that have been
+              infused with Indonesian spices, giving them a unique and aromatic
+              flavor. These noodles perfectly complement the rich broth and
+              toppings, creating a harmonious blend of flavors.
+            </p>
+            {/* </div> */}
+            {/* <p className="text-lg md:text-xl mb-4">
         Join us at Ramen Restaurant G for an unforgettable culinary experience.
         Our Indonesian-Chinese fusion style ramen will take you on a journey of
         flavors, combining the best of both cuisines in a single bowl. Taste
         the harmony of Indonesian and Chinese influences and indulge in the
         exquisite flavors that only fusion cuisine can offer.
       </p> */}
-    </div>
+          </div>
+        </div>
+      </div>
+      {/* <div
+        className="flex flex-col sm:flex-row"
+        // data-aos="fade-right"
+      > */}
+        <div
+        className="relative p-12 text-[#717171] flex flex-col sm:flex-row justify-center items-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
+          // backgroundSize: 'cover',
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(80px)",
+        }}
+        // data-aos="fade-up"
+      >
+        <div
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <div
+          data-aos="flip-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20" />
+              <h2 className="text-3xl font-bold my-6 ">
+                Indonesian-Chinese Fusion Style Ramen
+              </h2>
+            </div>
+            {/* <div className="flex flex-col items-center justify-center"> */}
+
+            <p className="text-lg md:text-lg mb-4">
+              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+              great food and culture. In Indonesia, we embrace the rich culinary
+              heritage of both Indonesian and Chinese cuisines. We believe that
+              blending these two culinary traditions creates a unique and
+              flavorful experience.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Our fusion-style Ramen showcases the best of both worlds. We
+              combine traditional Indonesian spices and ingredients with the art
+              of Chinese noodle-making to create a truly satisfying and
+              delicious bowl of ramen.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              At Ramen Restaurant G, we take pride in our carefully crafted
+              recipes and attention to detail. Our broth is simmered for hours
+              using a combination of Indonesian spices and Chinese cooking
+              techniques, resulting in a rich and flavorful base. We source the
+              freshest ingredients, including local produce and quality meats,
+              to ensure the highest quality in every bowl.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              The noodles in our fusion ramen are a combination of Indonesian
+              and Chinese styles. We use thin, chewy noodles that have been
+              infused with Indonesian spices, giving them a unique and aromatic
+              flavor. These noodles perfectly complement the rich broth and
+              toppings, creating a harmonious blend of flavors.
+            </p>
+            {/* </div> */}
+            {/* <p className="text-lg md:text-xl mb-4">
+        Join us at Ramen Restaurant G for an unforgettable culinary experience.
+        Our Indonesian-Chinese fusion style ramen will take you on a journey of
+        flavors, combining the best of both cuisines in a single bowl. Taste
+        the harmony of Indonesian and Chinese influences and indulge in the
+        exquisite flavors that only fusion cuisine can offer.
+      </p> */}
+          </div>
+        </div>
+
+        <div
+  data-aos="fade-left"
+  className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+>
+  <div className="h-3/4 w-3/4 overflow-hidden">
+    <img
+      src={cardImageTwo}
+      alt="background"
+      className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+    />
   </div>
 </div>
 
+      </div>
     </div>
   );
 };
