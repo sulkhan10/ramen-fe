@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
 
 body {
-  font-family: 'Caudex', serif;
+  font-family: "Caudex", serif;
 }
-
 
 .bg-navbar {
   background-color: white;
@@ -29,22 +25,33 @@ body {
 }
 .inactive {
   /* opacity: 0; */
-  animation: fadeOut 1s  ease-in-out  ;
+  animation: fadeOut 1s ease-in-out;
 }
 
 .fade {
-  animation: fadeOut 1s  ease-in-out  ;
-
+  animation: fadeOut 1s ease-in-out;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  50% { opacity: .5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fadeOut {
-  0% { opacity: 0; }
-  50% { opacity: .5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -54,8 +61,8 @@ body {
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .footer {
@@ -71,8 +78,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .9;
-  background-color: #FBF9F2
+  opacity: 0.9;
+  background-color: #fbf9f2;
 }
 
 .footer-content {
@@ -82,5 +89,13 @@ body {
   /* Additional styling for the text */
 }
 
+.slide-in-from-left-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
 
-
+.slide-in-from-left-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
