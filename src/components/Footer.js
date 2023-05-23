@@ -48,7 +48,7 @@ let Footer = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   return (
-    <div className="footer py-4">
+    <div className="footer pt-8 pb-4">
       <div className="footer-overlay"></div>
       <div className="footer-content flex flex-col items-center justify-center">
         <img src={logo} alt="logo" className=" h-12 mb-4" />
@@ -86,7 +86,7 @@ let Footer = () => {
             subject="Hello"
             body="I'm interested in your services"
           />
-        </div>
+        </div>  
 
         <p className="text-[#474747] tracking-wide">© 2023 Ramen Ramen</p>
         <p className="text-[#6e6e6e] tracking-wide">
