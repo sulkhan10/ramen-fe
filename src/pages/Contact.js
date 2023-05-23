@@ -81,7 +81,7 @@ let Contact = () => {
     );
   };
   return (
-    <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171]">
+    <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171] ">
       <img
         src={backgroundAbout}
         alt="background"
@@ -90,7 +90,7 @@ let Contact = () => {
       <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-20"></div>
 
       <div
-        className="relative p-12 text-[#717171] flex flex-col justify-center items-center w-full"
+        className="relative p-12 text-[#717171] flex flex-col justify-center items-center w-full sm:py-24"
         style={{
           backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
           // backgroundSize: 'cover',
@@ -144,7 +144,7 @@ let Contact = () => {
       </div>
 
       <div
-        className="relative p-12  flex flex-col justify-center items-center w-full text-gray-50"
+        className="relative p-12  flex flex-col justify-center items-center w-full text-gray-50 sm:py-24"
         style={{
           backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.7), rgba(251,	249,	242, 0.7)),url("${backgroundForm}")`,
           // backgroundSize: 'cover',
@@ -166,19 +166,19 @@ let Contact = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:justify-between gap-2 w-full">
-            <div className="w-1/3">
-              <div className="flex gap-8 mb-4">
+            <div className="sm:w-1/3">
+              <div className="flex gap-8 mb-2 sm:mb-4">
                 <InstagramLink username="s.g.sakti" />
                 <p>s.g.sakti</p>
               </div>
-              <div className="flex gap-8 mb-4">
+              <div className="flex gap-8 mb-2 sm:mb-4">
                 <WhatsappLink
                   phoneNumber="6285858999264"
                   message="Hello, I have a question."
                 />
                 <p>6285858999264</p>
               </div>
-              <div className="flex gap-8 mb-4">
+              <div className="flex gap-8 mb-2 sm:mb-4">
                 <MailToLink
                   email="sulkhangalangsakti@gmail.com"
                   subject="Hello"
@@ -187,7 +187,7 @@ let Contact = () => {
                 <p>sulkhangalangsakti@gmail.com</p>
               </div>
             </div>
-            <div className="w-2/3">
+            <div className="sm:w-2/3">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex gap-5">
                   <div className="w-1/2">
