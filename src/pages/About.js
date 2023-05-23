@@ -24,7 +24,7 @@ import logoIcon from "../assets/image/logo-icon.png";
 import { CSSTransition } from "react-transition-group";
 import { Transition } from "react-transition-group";
 
-// import { useTransition, animated } from "react-spring"; 
+// import { useTransition, animated } from "react-spring";
 
 AOS.init();
 
@@ -37,7 +37,6 @@ let About = () => {
     // AOS.refresh();
     setStepBefore(currentStep);
     setCurrentStep(step);
-
   };
   // const transitions = useTransition(currentStep, null, {
   //   from: { opacity: 0, transform: "translateX(-100%)" },
@@ -201,98 +200,95 @@ let About = () => {
           </div>
         </div>
       </div>
-     
+
+      <div
+        className="relative text-[#717171] flex flex-col sm:flex-row justify-center items-center "
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(80px)",
+        }}
+      >
         <div
-          className="relative p-12 text-[#717171] flex flex-col sm:flex-row justify-center items-center"
-          style={{
-            backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
-            backgroundPosition: "left",
-            backgroundRepeat: "no-repeat",
-            backdropFilter: "blur(80px)",
-          }}
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <div
+          data-aos="fade-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
         >
-          <div
-            className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
-            style={{ zIndex: -1 }}
-          ></div>
-          <div
-            data-aos="fade-right"
-            className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
-          >
-            <div className="text-[#717171] ">
-              <div className="flex my-6">
-                <img src={logoIcon} alt="logo" className="w-20 h-20" />
-                <h2 className="text-3xl font-bold my-6 ">
-                  Indonesian-Chinese Fusion Style Ramen
-                </h2>
-              </div>
-
-              <p className="text-lg md:text-lg mb-4">
-                The idea of "Ramen Restaurant G" was born out of an enthusiasm for
-                great food and culture. In Indonesia, we embrace the rich culinary
-                heritage of both Indonesian and Chinese cuisines. We believe that
-                blending these two culinary traditions creates a unique and
-                flavorful experience.
-              </p>
-              <p className="text-lg md:text-lg mb-4">
-                Our fusion-style Ramen showcases the best of both worlds. We
-                combine traditional Indonesian spices and ingredients with the art
-                of Chinese noodle-making to create a truly satisfying and
-                delicious bowl of ramen.
-              </p>
-              <p className="text-lg md:text-lg mb-4">
-                At Ramen Restaurant G, we take pride in our carefully crafted
-                recipes and attention to detail. Our broth is simmered for hours
-                using a combination of Indonesian spices and Chinese cooking
-                techniques, resulting in a rich and flavorful base. We source the
-                freshest ingredients, including local produce and quality meats,
-                to ensure the highest quality in every bowl.
-              </p>
-              <p className="text-lg md:text-lg mb-4">
-                The noodles in our fusion ramen are a combination of Indonesian
-                and Chinese styles. We use thin, chewy noodles that have been
-                infused with Indonesian spices, giving them a unique and aromatic
-                flavor. These noodles perfectly complement the rich broth and
-                toppings, creating a harmonious blend of flavors.
-              </p>
-            
+          <div className="text-[#717171] ">
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20" />
+              <h2 className="text-3xl font-bold my-6 ">
+                Indonesian-Chinese Fusion Style Ramen
+              </h2>
             </div>
-          </div>
 
-          <div
-            data-aos="flip-right"
-            className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
-          >
-            <div className="h-3/4 w-3/4 overflow-hidden">
-              <img
-                src={cardImageTwo}
-                alt="background"
-                className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-        "
-              />
-            </div>
+            <p className="text-lg md:text-lg mb-4">
+              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+              great food and culture. In Indonesia, we embrace the rich culinary
+              heritage of both Indonesian and Chinese cuisines. We believe that
+              blending these two culinary traditions creates a unique and
+              flavorful experience.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Our fusion-style Ramen showcases the best of both worlds. We
+              combine traditional Indonesian spices and ingredients with the art
+              of Chinese noodle-making to create a truly satisfying and
+              delicious bowl of ramen.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              At Ramen Restaurant G, we take pride in our carefully crafted
+              recipes and attention to detail. Our broth is simmered for hours
+              using a combination of Indonesian spices and Chinese cooking
+              techniques, resulting in a rich and flavorful base. We source the
+              freshest ingredients, including local produce and quality meats,
+              to ensure the highest quality in every bowl.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              The noodles in our fusion ramen are a combination of Indonesian
+              and Chinese styles. We use thin, chewy noodles that have been
+              infused with Indonesian spices, giving them a unique and aromatic
+              flavor. These noodles perfectly complement the rich broth and
+              toppings, creating a harmonious blend of flavors.
+            </p>
           </div>
         </div>
 
-      <div className="flex">
-      <div className="w-1/2  transition-all">
-      
+        <div
+          data-aos="flip-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+        >
+          <div className="h-3/4 w-3/4 overflow-hidden">
+            <img
+              src={cardImageTwo}
+              alt="background"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+        "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className=" flex flex-col sm:flex-row py-8 sm:py-0 ">
+        <div className="sm:w-1/2  transition-all flex items-center justify-center">
           <img
             src={getImageUrlByStep(currentStep)}
             alt="Step Image"
-            className="h-[480px] w-auto object-fill "
+            className="h-[480px] w-auto  object-fill "
             // data-aos="flip-right"
-            style={{ objectPosition: "center",
-            // transition: `${currentStep === stepBefore ? " 1s ease-in-out" : " 1s ease-in-out"}`,
-            // filter: `${currentStep === stepBefore ? "brightness(100%)" : "brightness(50%)"}`,
-            // opacity: `${currentStep === stepBefore ? "100%" : "50%"}`
-            
-
-          }
-          }
+            style={{
+              objectPosition: "center",
+              objectFit: "cover",
+              // transition: `${currentStep === stepBefore ? " 1s ease-in-out" : " 1s ease-in-out"}`,
+              // filter: `${currentStep === stepBefore ? "brightness(100%)" : "brightness(50%)"}`,
+              // opacity: `${currentStep === stepBefore ? "100%" : "50%"}`
+            }}
           />
-      </div>
-        <div className="w-1/2 p-8">
+        </div>
+        <div className="sm:w-1/2 p-8">
           <h2 className="text-2xl font-bold mb-4">小满米线 The Process</h2>
           <ul className="mb-4">
             <li
