@@ -31,7 +31,7 @@ import {
   IoLogoWhatsapp,
   IoMailOutline,
 } from "react-icons/io5";
-
+import SimpleMap from "../components/Map";
 AOS.init();
 
 let Contact = () => {
@@ -250,6 +250,8 @@ let Contact = () => {
           </div>
         </div>
       </div>
+
+<SimpleMap />
     </div>
   );
 };
