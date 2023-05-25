@@ -70,6 +70,7 @@ let Homepage = () => {
           </p>
         </div>
       </div>
+     
       <div
         data-aos="fade-down"
         data-aos-duration="3000"
@@ -93,6 +94,33 @@ let Homepage = () => {
                 className="text-white py-2 px-4 rounded-3xl border-2 border-white hover:bg-gray-50 hover:text-gray-700 transition duration-600"              >
                 &nbsp; &nbsp; About Us &nbsp; &nbsp;
               </button>{" "}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      
+      <div
+        data-aos="fade-down"
+        data-aos-duration="3000"
+        className="  inset-0 flex flex-col z-10"
+      >
+        <div className="relative flex items-center justify-center ">
+          <div className="h-[80vh] absolute inset-0 bg-image-navbar opacity-40 -z-20"></div>
+          <div className=" absolute inset-0 bg-black opacity-70 -z-10"></div>
+          <img
+            src={backgroundHomepage}
+            className="absolute h-[80vh] w-full object-cover inset-0 -z-30"
+          />
+
+          <ul className="h-[80vh] flex flex-col items-center justify-center gap-4  w-4/5 sm:w-3/4">
+            <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
+            Reward Program
+            </li>
+            <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
+Coming Soon
             </li>
           </ul>
         </div>
