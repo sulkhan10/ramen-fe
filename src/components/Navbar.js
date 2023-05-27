@@ -170,9 +170,9 @@ const Navbar = () => {
       )}
 
       {isMobileMenuOpen && screenWidth <= 768 && (
-        <div  className=" z-50">
-          <div   data-aos="fade-down"
-        data-aos-duration="3000" className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-10">
+        <div  className=" ">
+          <div   data-aos="fade-down "
+        data-aos-duration="3000" className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-50">
             <div className="relative py-2">
               <div className="min-h-screen absolute inset-0 bg-image-navbar opacity-50 -z-20"></div>
               <div className=" absolute inset-0 bg-black opacity-70 -z-10"></div>

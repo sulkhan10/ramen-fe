@@ -3,7 +3,16 @@ import "../index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.min.css";
-// import "swiper/components/navigation/navigation.min.css";
+import {
+  IoLogoInstagram,
+  IoLogoWhatsapp,
+  IoMailOutline,
+  IoArrowForwardCircleOutline,
+  IoArrowBackCircleOutline,
+  IoRemove,
+} from "react-icons/io5";
+import { useMediaQuery } from 'react-responsive';
+
 import MoonLoader from "react-spinners/MoonLoader";
 
 SwiperCore.use([Navigation]);
@@ -27,6 +36,42 @@ const Menu = () => {
       swiperRef.current.swiper.slidePrev();
     }
   };
+  const [isNextHovered, setIsNextHovered] = useState(false);
+  const [isPrevHovered, setIsPrevHovered] = useState(false);
+
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
+
+  const handleClickNext = () => {
+    goNext();
+  
+    if (isSmallScreen) {
+      handleMouseLeaveNext();
+    }
+  };
+  const handleClickPrev = () => {
+    goPrev();
+  
+    if (isSmallScreen) {
+      handleMouseLeavePrev();
+    }
+  };
+
+  const handleMouseEnterPrev = () => {
+    setIsPrevHovered(true);
+  };
+
+  const handleMouseLeavePrev = () => {
+    setIsPrevHovered(false);
+  };
+  const handleMouseEnterNext = () => {
+    setIsNextHovered(true);
+  };
+
+  const handleMouseLeaveNext = () => {
+    setIsNextHovered(false);
+  };
+  const iconSizeNext = isNextHovered ? "scale-125" : "scale-100";
+  const iconSizePrev = isPrevHovered ? "scale-125" : "scale-100";
 
   return (
     <div className="min-h-screen bg-red-400 flex justify-center items-center text-4xl text-white ">
@@ -103,9 +148,28 @@ const Menu = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-700 z-10">
-          <button onClick={goPrev}>Previous</button>
-          <button onClick={goNext}>Next</button>
+        <div className="absolute sm:left-0 bottom-4 w-1/3  left-1/3 sm:bottom-1/8 transform -translate-y-1/2 bg-red-100 z-10">
+          <div className="flex items-center justify-center">
+           
+            <button
+              className={`focus:outline-none transform transition-transform duration-200 ${iconSizePrev}`}
+              onMouseEnter={handleMouseEnterPrev}
+              onMouseLeave={handleMouseLeavePrev}
+              onClick={handleClickPrev}
+            >
+              <IoArrowBackCircleOutline size={32} color="#cf6e49" />
+            </button>
+            <div className="border-b-2 border-[#cf6e49] w-[100px]"></div>
+            <button
+              className={`focus:outline-none transform transition-transform duration-200 ${iconSizeNext}`}
+              onMouseEnter={handleMouseEnterNext}
+              onMouseLeave={handleMouseLeaveNext}
+              onClick={
+                handleClickNext
+              }            >
+              <IoArrowForwardCircleOutline size={32} color="#cf6e49" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
