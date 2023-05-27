@@ -80,7 +80,7 @@ const Navbar = () => {
         <div
         data-aos="fade-down"
         data-aos-duration="3000"
-          className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass}`}
+          className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass} z-50`}
         >
           <NavLink to="/">
             {scrolled && <img className="w-30 h-12" src={logoColor} />}
@@ -126,7 +126,7 @@ const Navbar = () => {
         <div
         data-aos="fade-down"
         data-aos-duration="3000"
-          className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass}`}
+          className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass}  z-50`}
         >
           <NavLink to="/">
             {scrolled && <img className="w-30 h-12" src={logoColor} />}
@@ -170,7 +170,7 @@ const Navbar = () => {
       )}
 
       {isMobileMenuOpen && screenWidth <= 768 && (
-        <div  className="">
+        <div  className=" z-50">
           <div   data-aos="fade-down"
         data-aos-duration="3000" className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-10">
             <div className="relative py-2">
@@ -249,7 +249,7 @@ const Navbar = () => {
         data-aos-duration="3000"
 
 
-          className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+          className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}  z-50`}
         >
           {" "}
           <NavLink to="/">
@@ -309,7 +309,7 @@ const Navbar = () => {
         data-aos-duration="3000"
 
 
-          className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}`}
+          className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}  z-50 `}
         >
           {" "}
           <NavLink to="/">
