@@ -80,36 +80,54 @@ const Menu = () => {
       <div className="h-screen ">
         <img src={backgroundMenu} className="h-full object-cover" />
       </div>
-      <div className="flex">
-        <div className="h-auto w-1/4 overflow-hidden">
-          <img
-            src={cardMenuOne}
-            alt="card menu"
-            className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	"
-          />
+      {/* <div className="flex items-center justify-center w-full"> */}
+        <div className="flex flex-wrap p-12 items-center justify-center">
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />
+          </div>
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/5 overflow-hidden m-2">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
         </div>
-        <div className="h-auto w-1/4 overflow-hidden">
-          <img
-            src={cardMenuOne}
-            alt="card menu"
-            className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	"
-          />
-        </div>
-        <div className="h-auto w-1/4 overflow-hidden">
-          <img
-            src={cardMenuOne}
-            alt="card menu"
-            className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	"
-          />
-        </div>
-        <div className="h-auto w-1/4 overflow-hidden">
-          <img
-            src={cardMenuOne}
-            alt="card menu"
-            className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	"
-          />
-        </div>
-      </div>
+      {/* </div> */}
+
       <div className="w-full sm:h-[70vh] relative p-12 mb-20 ">
         <Swiper
           ref={swiperRef}
