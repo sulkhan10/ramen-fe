@@ -79,69 +79,150 @@ const Menu = () => {
     <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171] ">
       <div className="h-screen ">
         <img src={backgroundMenu} className="h-full object-cover" />
+      </div>{" "}
+      <div className="flex flex-col sm:flex-row  pt-8 px-8 sm:p-12 sm:mt-12 items-center justify-evenly w-full">
+        <div className="w-full sm:w-1/3 py-4 sm:py-0">
+          <p className="text-[#cb6037] text-3xl sm:text-5xl">OUR MENU </p>
+        </div>
+        <div className="w-full sm:w-2/3">
+          <p className="text-gray-500 sm:text-xl">
+            Morbi non arcu risus quis. Elementum tempus donne egestas sed sed
+            risus pretium quam vulputate. Etiam sit amet nisl purus. Lorem
+            mollis aliquam ut porttitor leo a diam sollicitudin tempor. Sed
+            vulputate odio ut enim.
+          </p>
+        </div>
       </div>
-      {/* <div className="flex items-center justify-center w-full"> */}
-        <div className="flex flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly">
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
+      <div className="flex flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly w-full">
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
             <img
               src={cardMenuOne}
               alt="card menu"
               className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
       "
-            />
+            />{" "}
           </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
-          </div>
-          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
-            />
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
           </div>
         </div>
-      {/* </div> */}
-
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
+          <div className=" w-full overflow-hidden ">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+      "
+            />{" "}
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
+            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
+              MARGHERITA
+            </p>
+            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
+          </div>
+        </div>
+      </div>
       <div className="w-full sm:h-[70vh] relative p-12 mb-20 ">
         <Swiper
           ref={swiperRef}
