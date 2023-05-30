@@ -99,3 +99,20 @@ body {
   transform: translateX(0%);
   transition: opacity 500ms, transform 500ms;
 }
+
+
+.neon-effect-hover:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9d00, 0 0 35px #ff9d00, 0 0 40px #ff9d00, 0 0 50px #ff9d00, 0 0 75px #ff9d00;
+  animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-animation {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9d00, 0 0 35px #ff9d00, 0 0 40px #ff9d00, 0 0 50px #ff9d00, 0 0 75px #ff9d00;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9d00, 0 0 35px #ff9d00, 0 0 40px #ff9d00, 0 0 50px #ff9d00, 0 0 75px #ff9d00;
+  }
+}
+
+

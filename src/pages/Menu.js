@@ -16,6 +16,7 @@ import backgroundMenu from "../assets/image/background-menu-1.webp";
 import cardMenuOne from "../assets/image/card-menu-1.jpg";
 import cardMenuTwo from "../assets/image/card-menu-2.jpg";
 import MoonLoader from "react-spinners/MoonLoader";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Navigation]);
 
@@ -79,7 +80,68 @@ const Menu = () => {
     <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171] ">
       <div className="h-screen ">
         <img src={backgroundMenu} className="h-full object-cover" />
-      </div>{" "}
+      </div >{" "}
+      <div className="sm:py-8 pt-8">
+        <h2 className="text-3xl sm:text-5xl  text-center text-gray-500 pt-4">
+          WE MADE ORGANIC
+        </h2>
+        <h2 className="text-3xl sm:text-5xl  text-center text-gray-400 pb-8">
+          TASTEFUL, AND DELICIOUS FOOD
+        </h2>
+        <p className="text-lg text-center text-gray-600 px-8 sm:px-48">
+          Morbi non arcu risus quis. Elementum tempus donne egestas sed sed
+          risus pretium quam vulputate. Etiam sit amet nisl purus. Lorem mollis
+          aliquam ut porttitor leo a diam sollicitudin tempor. Sed vulputate
+          odio ut enim.
+        </p>
+      </div >
+      <div className="flex flex-col sm:flex-row flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly w-full">
+        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
+          <Link to="/your-page-url">
+            <div className="w-full ">
+              <img
+                src={cardMenuOne}
+                alt="card menu"
+                className="h-full w-full object-cover "
+              />
+              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
+            </div>
+            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
+              <span className="neon-effect-hover">MARGHERITA</span>
+            </p>
+          </Link>
+        </div>
+        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
+          <Link to="/your-page-url">
+            <div className="w-full ">
+              <img
+                src={cardMenuOne}
+                alt="card menu"
+                className="h-full w-full object-cover "
+              />
+              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
+            </div>
+            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
+              <span className="neon-effect-hover">MARGHERITA</span>
+            </p>
+          </Link>
+        </div>
+        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
+          <Link to="/your-page-url">
+            <div className="w-full ">
+              <img
+                src={cardMenuOne}
+                alt="card menu"
+                className="h-full w-full object-cover "
+              />
+              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
+            </div>
+            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
+              <span className="neon-effect-hover">MARGHERITA</span>
+            </p>
+          </Link>
+        </div>
+      </div>
       <div className="flex flex-col sm:flex-row  pt-8 px-8 sm:p-12 sm:mt-12 items-center justify-evenly w-full">
         <div className="w-full sm:w-1/3 py-4 sm:py-0">
           <p className="text-[#cb6037] text-3xl sm:text-5xl">OUR MENU </p>
