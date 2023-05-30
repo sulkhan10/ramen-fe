@@ -81,8 +81,8 @@ const Menu = () => {
         <img src={backgroundMenu} className="h-full object-cover" />
       </div>
       {/* <div className="flex items-center justify-center w-full"> */}
-        <div className="flex flex-wrap p-12 items-center justify-center">
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+        <div className="flex flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
@@ -90,35 +90,49 @@ const Menu = () => {
       "
             />
           </div>
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
               className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
             />
           </div>
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
               className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
             />
           </div>
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
               className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
             />
           </div>
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
               className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
             />
           </div>
-          <div className="h-auto w-1/5 overflow-hidden m-2">
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
+            <img
+              src={cardMenuOne}
+              alt="card menu"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125"
+            />
+          </div>
+          <div className="h-auto w-1/2 sm:w-1/5 overflow-hidden p-2 sm:p-0 sm:m-2 sm:my-5">
             <img
               src={cardMenuOne}
               alt="card menu"
