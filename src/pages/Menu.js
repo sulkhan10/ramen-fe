@@ -17,7 +17,16 @@ import cardMenuOne from "../assets/image/card-menu-1.jpg";
 import cardMenuTwo from "../assets/image/card-menu-2.jpg";
 import MoonLoader from "react-spinners/MoonLoader";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+import backgroundSectionTwo from "../assets/image/bg-section-2.jpg";
 
+import cardImageTwo from "../assets/image/card-about-2.jpg";
+
+import logoIcon from "../assets/image/logo-icon.png";
+
+AOS.init();
 SwiperCore.use([Navigation]);
 
 const Menu = () => {
@@ -80,7 +89,54 @@ const Menu = () => {
     <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171] ">
       <div className="h-screen ">
         <img src={backgroundMenu} className="h-full object-cover" />
-      </div >{" "}
+      </div>{" "}
+      <div
+        className="relative text-[#717171] flex flex-col sm:flex-row justify-center items-center  py-12"
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(80px)",
+        }}
+      >
+        <div
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <div
+          data-aos="fade-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+            <img src={logoIcon} alt="logo" className="hidden sm:block sm:w-40 sm:h-40 mt-16" />
+            <h2 className="text-3xl sm:text-5xl  mt-6 ">OUR MISSION IS TO </h2>
+            <h2 className="text-3xl sm:text-5xl">BRING TRUE ITALIAN</h2>
+            <h2 className="text-3xl sm:text-5xl  mb-6 ">FLAVOURS TO YOU </h2>
+
+            <p className="text-lg md:text-lg mb-4">
+              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
+              great food and culture. In Indonesia, we embrace the rich culinary
+              heritage of both Indonesian and Chinese cuisines. We believe that
+              blending these two culinary traditions creates a unique and
+              flavorful experience.
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="flip-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+        >
+          <div className="h-3/4 w-3/4 overflow-hidden">
+            <img
+              src={cardImageTwo}
+              alt="background"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+        "
+            />
+          </div>
+        </div>
+      </div>
       <div className="sm:py-8 pt-8">
         <h2 className="text-3xl sm:text-5xl  text-center text-gray-500 pt-4">
           WE MADE ORGANIC
@@ -94,7 +150,7 @@ const Menu = () => {
           aliquam ut porttitor leo a diam sollicitudin tempor. Sed vulputate
           odio ut enim.
         </p>
-      </div >
+      </div>
       <div className="flex flex-col sm:flex-row flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly w-full">
         <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
           <Link to="/your-page-url">
