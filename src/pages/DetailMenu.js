@@ -7,8 +7,8 @@ let DetailMenu = () => {
   let [dataIngredients, setDataIngredients] = useState([]);
   let [dataCategory, setDataCategory] = useState("");
   let [loading, setLoading] = useState(true);
-
-
+let { id } = useParams();
+console.log(id);
   return (
     <div className="min-h-screen bg-red-400 flex justify-center items-center text-4xl text-white">
      DetailMenu
