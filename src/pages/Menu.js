@@ -12,7 +12,7 @@ import {
   IoRemove,
 } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
-import backgroundMenu from "../assets/image/background-menu-1.webp";
+import backgroundMenu from "../assets/image/image3.jpg";
 import cardMenuOne from "../assets/image/card-menu-1.jpg";
 import cardMenuTwo from "../assets/image/card-menu-2.jpg";
 import MoonLoader from "react-spinners/MoonLoader";
@@ -20,11 +20,20 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
-import backgroundSectionTwo from "../assets/image/bg-section-2.jpg";
+import backgroundSectionTwo from "../assets/image/images9.jpg";
 
-import cardImageTwo from "../assets/image/card-about-2.jpg";
-
-import logoIcon from "../assets/image/logo-icon.png";
+import cardImageOne from "../assets/image/image1.jpg";
+import cardImageTwo from "../assets/image/image2.jpg";
+import cardImageThree from "../assets/image/image3.jpg";
+import cardImageFour from "../assets/image/image4.jpg";
+import cardImageFive from "../assets/image/image5.jpg";
+import cardImageSix from "../assets/image/image6.jpg";
+import cardImageSeven from "../assets/image/image7.jpg";
+import cardImageEight from "../assets/image/image8.jpg";
+import cardImageNine from "../assets/image/images9.jpg";
+import cardImageTen from "../assets/image/images10.jpg";
+import cardImageEleven from "../assets/image/images11.jpg";
+import logoIcon from "../assets/image/logo-reketek-grey.png";
 
 AOS.init();
 SwiperCore.use([Navigation]);
@@ -87,8 +96,11 @@ const Menu = () => {
 
   return (
     <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171] ">
-      <div className="h-screen ">
-        <img src={backgroundMenu} className="h-full object-cover" />
+      <div className="h-screen w-full flex justify-center bg-[#011051]">
+        <img
+          src={backgroundMenu}
+          className="w-full object-cover sm:pt-[-8%]  h-screen"
+        />
       </div>{" "}
       <div
         className="relative text-[#717171] flex flex-col sm:flex-row justify-center items-center  py-12"
@@ -108,17 +120,23 @@ const Menu = () => {
           className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
         >
           <div className="text-[#717171] ">
-            <img src={logoIcon} alt="logo" className="hidden sm:block sm:w-40 sm:h-40 mt-16" />
-            <h2 className="text-3xl sm:text-5xl  mt-6 ">OUR MISSION IS TO </h2>
-            <h2 className="text-3xl sm:text-5xl">BRING TRUE ITALIAN</h2>
-            <h2 className="text-3xl sm:text-5xl  mb-6 ">FLAVOURS TO YOU </h2>
+            <img
+              src={logoIcon}
+              alt="logo"
+              className="hidden sm:block sm:w-40  mt-16"
+            />
+            <h2 className="text-3xl sm:text-4xl  mt-6 ">MISI KAMI ADALAH</h2>
+            <h2 className="text-3xl sm:text-4xl">MENGHADIRKAN KEASLIAN</h2>
+            <h2 className="text-3xl sm:text-4xl  mb-6 ">
+              IKAN ARWANA EKSOTIS UNTUK ANDA
+            </h2>
 
             <p className="text-lg md:text-lg mb-4">
-              The idea of "Ramen Restaurant G" was born out of an enthusiasm for
-              great food and culture. In Indonesia, we embrace the rich culinary
-              heritage of both Indonesian and Chinese cuisines. We believe that
-              blending these two culinary traditions creates a unique and
-              flavorful experience.
+              Konsep Toko Ikan Hias Kami berawal dari antusiasme kami terhadap
+              ikan arwana eksotis. Kami menyediakan penjualan ikan arwana dan
+              layanan pengobatan serta perawatan khusus untuk ikan arwana. Kami
+              percaya bahwa keindahan ikan arwana dapat menjadi pengalaman yang
+              luar biasa bagi Anda.
             </p>
           </div>
         </div>
@@ -138,478 +156,186 @@ const Menu = () => {
         </div>
       </div>
       <div className="sm:py-8 pt-8">
-        <h2 className="text-3xl sm:text-5xl  text-center text-gray-500 pt-4">
-          WE MADE ORGANIC
+        <h2 className="text-3xl sm:text-5xl text-center text-gray-500 pt-4">
+          TOKO IKAN ARWANA EKSOTIS
         </h2>
-        <h2 className="text-3xl sm:text-5xl  text-center text-gray-400 pb-8">
-          TASTEFUL, AND DELICIOUS FOOD
+        <h2 className="text-3xl sm:text-5xl text-center text-gray-400 pb-8">
+          PENJUALAN DAN PERAWATAN
         </h2>
         <p className="text-lg text-center text-gray-600 px-8 sm:px-48">
-          Morbi non arcu risus quis. Elementum tempus donne egestas sed sed
-          risus pretium quam vulputate. Etiam sit amet nisl purus. Lorem mollis
-          aliquam ut porttitor leo a diam sollicitudin tempor. Sed vulputate
-          odio ut enim.
+          Kami dengan bangga menyediakan layanan penjualan ikan arwana eksotis
+          dan perawatan khusus untuk menjaga kesehatan dan keindahan ikan arwana
+          Anda. Kami berkomitmen untuk memberikan pengalaman yang alami,
+          memuaskan, dan profesional dalam merawat ikan arwana Anda. Dari
+          pemberian pakan yang tepat hingga pengobatan yang sesuai, tim kami
+          siap memberikan perawatan yang optimal untuk ikan arwana kesayangan
+          Anda.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly w-full">
-        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
-          <Link to="/your-page-url">
-            <div className="w-full ">
-              <img
-                src={cardMenuOne}
-                alt="card menu"
-                className="h-full w-full object-cover "
-              />
-              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
-            </div>
-            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
-              <span className="neon-effect-hover">MARGHERITA</span>
-            </p>
-          </Link>
-        </div>
-        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
-          <Link to="/your-page-url">
-            <div className="w-full ">
-              <img
-                src={cardMenuOne}
-                alt="card menu"
-                className="h-full w-full object-cover "
-              />
-              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
-            </div>
-            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
-              <span className="neon-effect-hover">MARGHERITA</span>
-            </p>
-          </Link>
-        </div>
-        <div className="w-3/4 sm:w-1/5  sm:m-2 sm:my-5 relative m-8 ">
-          <Link to="/your-page-url">
-            <div className="w-full ">
-              <img
-                src={cardMenuOne}
-                alt="card menu"
-                className="h-full w-full object-cover "
-              />
-              <div className="absolute top-0 left-0 h-full w-full bg-black opacity-50"></div>
-            </div>
-            <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-3xl text-white cursor-pointer">
-              <span className="neon-effect-hover">MARGHERITA</span>
-            </p>
-          </Link>
-        </div>
-      </div>
-      <div className="flex flex-col sm:flex-row  pt-8 px-8 sm:p-12 sm:mt-12 items-center justify-evenly w-full">
-        <div className="w-full sm:w-1/3 py-4 sm:py-0">
-          <p className="text-[#cb6037] text-3xl sm:text-5xl">OUR MENU </p>
-        </div>
-        <div className="w-full sm:w-2/3">
-          <p className="text-gray-500 sm:text-xl">
-            Morbi non arcu risus quis. Elementum tempus donne egestas sed sed
-            risus pretium quam vulputate. Etiam sit amet nisl purus. Lorem
-            mollis aliquam ut porttitor leo a diam sollicitudin tempor. Sed
-            vulputate odio ut enim.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-wrap py-12 px-4 sm:p-2 items-center justify-evenly w-full">
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-        <div className=" w-1/2 sm:w-1/5 p-2 sm:p-0 sm:m-2 sm:my-5">
-          <div className=" w-full overflow-hidden ">
-            <img
-              src={cardMenuOne}
-              alt="card menu"
-              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
-      "
-            />{" "}
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-8 font-semibold p-2 sm:justify-around">
-            <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-              MARGHERITA
-            </p>
-            <p className="cursor-default text-[#cb6037]"> $ 11.99 USD</p>
-          </div>
-        </div>
-      </div>
-      <div className="w-full sm:h-[70vh] relative p-12 mb-20 ">
-        <Swiper
-          ref={swiperRef}
-          slidesPerView="auto"
-          navigation
-          loop={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+      <div
+        className="flex flex-col sm:flex-row"
+        // data-aos="fade-right"
+      >
+        <div
+          data-aos="fade-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
         >
-          <SwiperSlide>
-            <div className="flex gap-8 bg-[#f5f0ec] flex-col sm:flex-row  ">
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <p className="cursor-default text-xl font-semibold tracking-wider	">
-                  SPECIAL TASTE
-                </p>
-                <p className="cursor-default text-5xl font-semobild text-[#cb6037] py-2 tracking-wider">
-                  PIZZA
-                </p>
-                <p className="cursor-default text-lg 	">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      MARGHERITA
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
+          <img
+            src={cardImageOne}
+            alt="background"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      CALZONE
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      PEPPERONI
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      HAWAIIAN
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-              </div>
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      TRIPLE MUSHROOM
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      MEAT FEAST
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      QUATTRO FORMAGGI
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      TONNO
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Fish</p>
-                </div>
-              </div>
+        <div
+          data-aos="flip-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20 mr-8" />
+              <h2 className="text-3xl font-bold my-6 ">
+                Perawatan Ikan Arwana Profesional
+              </h2>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex gap-8 bg-[#f5f0ec] flex-col sm:flex-row  ">
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <p className="cursor-default text-xl font-semibold tracking-wider	">
-                  SPECIAL TASTE
-                </p>
-                <p className="cursor-default text-5xl font-semobild text-[#cb6037] py-2 tracking-wider">
-                  PIZZA
-                </p>
-                <p className="cursor-default text-lg	">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      MARGHERITA
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
 
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      CALZONE
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      PEPPERONI
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      HAWAIIAN
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-              </div>
-              <div className="w-full sm:w-1/3 flex flex-col gap-6">
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      TRIPLE MUSHROOM
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      MEAT FEAST
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Meat</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      QUATTRO FORMAGGI
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p className="cursor-default">Vegeterian</p>
-                </div>
-                <div>
-                  <div className="flex gap-8 text-xl pb-2">
-                    <p className="cursor-default hover:text-[#cb6037] transition-colors duration-400 hover:cursor-pointer">
-                      TONNO
-                    </p>
-                    <p className="cursor-default text-[#cb6037]">
-                      {" "}
-                      $ 11.99 USD
-                    </p>
-                  </div>
-                  <p>Fish</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-        <div className="absolute sm:left-0 -bottom-16 w-1/3  left-1/3 sm:bottom-[20%] transform -translate-y-1/2 z-10 ">
-          <div className="flex items-center justify-center">
-            <button
-              className={`focus:outline-none transform transition-transform duration-200 ${iconSizePrev}`}
-              onMouseEnter={handleMouseEnterPrev}
-              onMouseLeave={handleMouseLeavePrev}
-              onClick={handleClickPrev}
-            >
-              <IoArrowBackCircleOutline size={32} color="#cf6e49" />
-            </button>
-            <div className="border-b-2 border-[#cf6e49] w-[100px]"></div>
-            <button
-              className={`focus:outline-none transform transition-transform duration-200 ${iconSizeNext}`}
-              onMouseEnter={handleMouseEnterNext}
-              onMouseLeave={handleMouseLeaveNext}
-              onClick={handleClickNext}
-            >
-              <IoArrowForwardCircleOutline size={32} color="#cf6e49" />
-            </button>
+            <p className="text-lg md:text-lg mb-4">
+              Kami dengan bangga menyediakan layanan perawatan ikan arwana yang
+              komprehensif. Tim ahli kami memiliki pengalaman dalam merawat dan
+              mengobati ikan arwana yang sakit atau memiliki masalah kesehatan.
+              Kami berkomitmen untuk memberikan perawatan yang profesional dan
+              memastikan kesehatan serta keindahan ikan arwana Anda.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Kami menggunakan pendekatan yang hati-hati dan berdasarkan
+              pengetahuan mendalam tentang kebutuhan khusus ikan arwana. Kami
+              menawarkan pemeriksaan kesehatan rutin, pengobatan penyakit,
+              pengaturan nutrisi yang tepat, serta lingkungan yang optimal untuk
+              ikan arwana Anda.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Dengan perawatan yang tepat, ikan arwana dapat tumbuh sehat,
+              indah, dan kuat. Tim kami siap membantu Anda menjaga kesehatan
+              ikan arwana kesayangan Anda dan memberikan saran yang sesuai untuk
+              perawatan lanjutan.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Kami menyadari betapa berharganya ikan arwana bagi Anda, dan
+              itulah mengapa kami berkomitmen untuk memberikan layanan perawatan
+              terbaik dengan fokus pada kesejahteraan dan kebahagiaan ikan
+              arwana Anda.
+            </p>
           </div>
         </div>
       </div>
-      <div className="h-screen ">
-        <img src={backgroundMenu} className="h-full object-cover" />
+      <div
+        className="relative text-[#717171] flex flex-col sm:flex-row justify-center items-center "
+        style={{
+          backgroundImage: `linear-gradient(rgba(251,	249,	242, 0.8), rgba(251,	249,	242, 0.9)),url("${backgroundSectionTwo}")`,
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          backdropFilter: "blur(80px)",
+        }}
+      >
+        <div
+          className="absolute inset-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          style={{ zIndex: -1 }}
+        ></div>
+        <div
+          data-aos="fade-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20 mr-10" />
+              <h2 className="text-3xl font-bold my-6 ">
+                Salon Ikan Arwana Terbaik
+              </h2>
+            </div>
+
+            <p className="text-lg md:text-lg mb-4">
+              Kami menyediakan layanan salon ikan arwana yang lengkap untuk
+              memperindah dan merawat ikan kesayangan Anda. Dengan layanan kami,
+              kami akan memperindah mata, mulut, sisir, dayung, pijat dayung,
+              sisir, dan suntik kembung ikan arwana Anda, sehingga menjadikannya
+              lebih cantik dan sehat.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Kami sangat memperhatikan detail dan kualitas dalam melakukan
+              salon ikan arwana. Dengan menggunakan teknik dan peralatan yang
+              tepat, kami akan memberikan perawatan terbaik untuk ikan arwana
+              Anda agar tetap sehat dan indah. Kami mengutamakan keamanan dan
+              kenyamanan ikan arwana selama proses salon.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Tim kami terdiri dari para ahli yang berpengalaman dalam merawat
+              ikan arwana. Kami menggunakan produk berkualitas dan mengikuti
+              prosedur yang tepat untuk memastikan bahwa ikan arwana Anda
+              mendapatkan perawatan yang terbaik. Anda dapat mempercayakan ikan
+              arwana kesayangan Anda kepada kami.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Dengan layanan salon ikan arwana kami, kami berharap dapat
+              memberikan pengalaman yang memuaskan bagi Anda dan ikan arwana
+              Anda. Kami selalu berusaha memberikan hasil yang memuaskan dan
+              menjaga kepercayaan Anda sebagai pelanggan kami.
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="flip-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+        >
+          <div className="h-3/4 w-3/4 overflow-hidden">
+            <img
+              src={cardImageEight}
+              alt="background"
+              className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
+        "
+            />
+          </div>
+        </div>
       </div>
+      <div
+        className="flex flex-col sm:flex-row"
+        // data-aos="fade-right"
+      >
+        <div
+          data-aos="fade-right"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+        >
+          <img
+            src={cardImageFour}
+            alt="background"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        <div
+          data-aos="flip-right"
+          className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
+        >
+          <div className="text-[#717171] ">
+          <div className="flex my-6">
+  <img src={logoIcon} alt="logo" className="w-20 h-20 mr-8" />
+  <h2 className="text-3xl font-bold my-6 ">
+    Titip Ikan Arwana 
+  </h2>
+</div>
+
+
+<p className="text-lg md:text-lg mb-4">
+  Kami mengerti bahwa keamanan dan kenyamanan ikan arwana Anda sangat penting. Oleh karena itu, kami akan memberikan perhatian penuh dan memastikan bahwa ikan arwana Anda mendapatkan perawatan terbaik selama Anda tidak berada di sana.
+</p>
+<p className="text-lg md:text-lg mb-4">
+  Anda dapat menitipkan ikan Anda kepada kami dengan keyakinan bahwa ikan Anda akan dalam kondisi yang prima sampai Anda mengambilnya kembali. Kami memiliki fasilitas yang aman dan lingkungan yang mendukung bagi ikan arwana Anda selama Anda tidak dapat merawatnya sendiri. Kepercayaan Anda adalah prioritas kami, dan kami akan menjaga kesehatan dan keindahan ikan arwana Anda dengan penuh dedikasi.
+</p>
+
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 };
