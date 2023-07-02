@@ -1,11 +1,13 @@
 import { React, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../index.css";
-import backgroundSectionTwo from "../assets/image/bg-section-2.jpg";
-import logoColor from "../assets/image/logo-color.png";
+import backgroundSectionTwo from "../assets/image/images9.jpg";
+import logoColor from "../assets/image/logo-reketek.png";
 import MoonLoader from "react-spinners/MoonLoader";
-import backgroundHomepage from "../assets/image/background-homepage.jpg";
-import cardImageTwo from "../assets/image/card-about-2.jpg";
+import backgroundHomepage from "../assets/image/images10.jpg";
+import cardImageOne from "../assets/image/image6.jpg";
+import cardImageTwo from "../assets/image/image2.jpg";
+import cardImageThree from "../assets/image/image7.jpg";
 import logoIcon from "../assets/image/logo-icon.png";
 import imageCard from "../assets/image/bg-section-12.jpg";
 import AOS from "aos";
@@ -27,7 +29,8 @@ let Homepage = () => {
         justify-center h-screen overflow-hidden"
         >
           <video
-            src="https://joy.videvo.net/videvo_files/video/premium/video0253/large_watermarked/1000_00859_preview.mp4"
+            src="https://www.shutterstock.com/shutterstock/videos/1103972075/preview/stock-footage-arowana-fish-swimming-in-a-clear-aquarium.webm"
+            // src="https://joy.videvo.net/videvo_files/video/premium/video0253/large_watermarked/1000_00859_preview.mp4"
             autoPlay="{true}"
             loop
             muted
@@ -58,22 +61,25 @@ let Homepage = () => {
               className="mx-auto w-40 py-8"
             />
             <p className="text-lg mb-4 text-justify sm:text-center">
-              &nbsp; The concept of "Ramen Restaurant G" originated from a deep
-              passion for exquisite cuisine and cultural experiences.
+              &nbsp; Selamat datang di Toko Ikan Hias Kami - destinasi
+              terbaik untuk pecinta ikan arwana. Kami menghadirkan kualitas
+              terbaik dalam penjualan ikan arwana eksotis serta layanan
+              perawatan dan pengobatan yang profesional.
             </p>
             <p className="text-lg mb-4 text-justify sm:text-center">
-              &nbsp; Having dedicated years to meticulous planning and
-              refinement, we are thrilled to present you with an extraordinary
-              dish: Yunnan's renowned "crossing-the-bridge" noodles.
+              &nbsp; Dedikasi kami terhadap kualitas dan keindahan ikan arwana
+              membawa kami pada pengalaman yang tak tertandingi. Jadikan kami
+              mitra terpercaya Anda dalam memilih ikan arwana berkualitas tinggi
+              yang akan mempercantik akuarium Anda.
             </p>
             <p className="text-lg mb-4 text-justify sm:text-center">
-              &nbsp; Embark on a culinary journey with us as we showcase the
-              freshness of our thoughtfully sourced ingredients. Delight in the
-              harmony of flavors as our signature base broth, painstakingly
-              simmered using premium chicken bones for up to 10 hours,
-              intermingles with the texture of our delectable rice noodles,
-              prepared right at your table.
+              &nbsp; Bersama kami, Anda akan menemukan berbagai jenis ikan
+              arwana yang memukau dengan warna dan corak yang menakjubkan. Kami
+              juga menyediakan layanan pengobatan dan perawatan terbaik untuk
+              memastikan kesehatan ikan arwana kesayangan
+              Anda.
             </p>
+         
           </div>
         </div>
 
@@ -91,17 +97,19 @@ let Homepage = () => {
             />
 
             <ul className="h-[80vh] flex flex-col items-center justify-center gap-8 sm:gap-20 w-4/5 sm:w-3/4">
-              <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
-                The Enduring Delight of a Satisfied Soul
-              </li>
+            <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
+  Pesona Eksotis Ikan Arwana yang Tak Terlupakan
+</li>
+              <Link to="/about">
               <li>
                 <button
                   type="submit"
                   className="text-white py-2 px-4 rounded-3xl border-2 border-white hover:bg-gray-50 hover:text-gray-700 transition duration-600"
-                >
+                  >
                   &nbsp; &nbsp; About Us &nbsp; &nbsp;
                 </button>{" "}
               </li>
+                  </Link>
             </ul>
           </div>
         </div>
@@ -125,22 +133,19 @@ let Homepage = () => {
             <div className="mx-auto py-2 w-full sm:w-1/3">
               <div className="h-3/4 w-full overflow-hidden">
                 <img
-                  src={cardImageTwo}
+                  src={cardImageOne}
                   alt="background"
                   className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
         "
                 />
               </div>
-              <h2 className="text-xl font-bold my-4 ">
-                Indonesian-Chinese Fusion Style Ramen
-              </h2>{" "}
-              <p className="text-sm md:text-sm mb-1">
-                The idea of "Ramen Restaurant G" was born out of an enthusiasm
-                for great food and culture. In Indonesia, we embrace the rich
-                culinary heritage of both Indonesian and Chinese cuisines. We
-                believe that blending these two culinary traditions creates a
-                unique and flavorful experience.
-              </p>
+              <h2 className="text-xl font-bold my-4">
+  Keindahan Ikan Arwana Silver
+</h2>{" "}
+<p className="text-sm md:text-sm mb-1">
+  Ikan Arwana Silver adalah salah satu jenis ikan hias yang menakjubkan. Keunikan warna peraknya yang mempesona serta gerakan yang anggun membuatnya menjadi pilihan yang sempurna untuk menghiasi akuarium Anda.
+</p>
+
             </div>
             <div className="mx-auto py-2 w-full sm:w-1/3">
               <div className="h-3/4 w-full overflow-hidden">
@@ -151,36 +156,31 @@ let Homepage = () => {
         "
                 />
               </div>
-              <h2 className="text-xl font-bold my-4 ">
-                Indonesian-Chinese Fusion Style Ramen
-              </h2>{" "}
-              <p className="text-sm md:text-sm mb-1">
-                The idea of "Ramen Restaurant G" was born out of an enthusiasm
-                for great food and culture. In Indonesia, we embrace the rich
-                culinary heritage of both Indonesian and Chinese cuisines. We
-                believe that blending these two culinary traditions creates a
-                unique and flavorful experience.
-              </p>
+              <h2 className="text-xl font-bold my-4">
+   Arwana Super Red yang Menakjubkan
+</h2>
+<p className="text-sm md:text-sm mb-1">
+  Arwana Super Red adalah salah satu varietas ikan Arwana yang paling menarik dan diminati di dunia akuatik. Dikenal karena warna merahnya yang mencolok dan sisik yang mengkilap, Arwana Super Red memberikan keindahan yang memukau di dalam akuarium Anda.
+</p>
             </div>
             <div className="mx-auto py-2 w-full sm:w-1/3">
               <div className="h-3/4 w-full overflow-hidden">
                 <img
-                  src={cardImageTwo}
+                  src={cardImageThree}
                   alt="background"
                   className="h-full w-full object-cover transform transition-transform duration-700 hover:scale-125	 
         "
                 />
               </div>
-              <h2 className="text-xl font-bold my-4 ">
-                Indonesian-Chinese Fusion Style Ramen
-              </h2>{" "}
-              <p className="text-sm md:text-sm mb-1">
-                The idea of "Ramen Restaurant G" was born out of an enthusiasm
-                for great food and culture. In Indonesia, we embrace the rich
-                culinary heritage of both Indonesian and Chinese cuisines. We
-                believe that blending these two culinary traditions creates a
-                unique and flavorful experience.
-              </p>
+              <h2 className="text-xl font-bold my-4">
+  Tips Merawat Ikan Arwana
+</h2>
+<p className="text-sm md:text-sm mb-1">
+  - Pilih akuarium yang cukup besar dan jaga kualitas air.
+  - Berikan makanan seimbang dan berkualitas tinggi.
+  - Lakukan pemeliharaan rutin dan perhatikan perilaku ikan.
+  - Beri ikan arwana ruang yang cukup dan hiaslah akuarium dengan elemen alami.
+</p>
             </div>
           </div>
         </div>
@@ -200,10 +200,10 @@ let Homepage = () => {
 
             <ul className="h-[80vh] flex flex-col items-center justify-center gap-4  w-4/5 sm:w-3/4">
               <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
-                Reward Program
+                Nantikan Layanan Terbaik Kami
               </li>
-              <li className="text-3xl sm:text-5xl text-gray-50 font-semibold text-center">
-                Coming Soon
+              <li className="text-3xl sm:text-3xl text-gray-50 font-semibold text-center">
+                Segera Hubungi Kami Untuk Informasi lebih lanjut
               </li>
             </ul>
           </div>

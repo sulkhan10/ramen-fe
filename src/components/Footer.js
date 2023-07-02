@@ -8,7 +8,7 @@ import {
   IoMailOutline,
 } from "react-icons/io5";
 
-import logo from '../assets/image/logo-red.png'
+import logo from '../assets/image/logo-reketek-grey.png'
 
 const MailToLink = ({ email, subject, body }) => {
   const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
@@ -52,14 +52,14 @@ let Footer = () => {
       <div className="footer-overlay"></div>
       <div className="footer-content flex flex-col items-center justify-center">
         <img src={logo} alt="logo" className=" h-12 mb-4" />
-        <h1 className="text-[#474747] tracking-wide">小满米线</h1>
-        <p className="text-[#474747] tracking-wide">(123) 456-78910</p>
-        <p className="text-[#474747] tracking-wide">ramen@gmail.com</p>
+        {/* <h1 className="text-[#474747] tracking-wide">小满米线</h1> */}
+        <p className="text-[#474747] tracking-wide">+62 877-8521-3604</p>
+        {/* <p className="text-[#474747] tracking-wide">ramen@gmail.com</p> */}
         {screenWidth > 768 ? (
           <div>
 
         <p className="text-[#474747] tracking-wide">
-          666 Ramen 6 Ramen 69-69,            Ramen, ON 36DD 36DD
+          666 ALAMAT  6 ALAMAT  69-69,            ALAMAT , ON 36DD 36DD
 
         </p>
        
@@ -78,8 +78,8 @@ let Footer = () => {
         <div className="social-media flex py-4 gap-4">
         <InstagramLink username="s.g.sakti"/>
           <WhatsappLink
-            phoneNumber="6285858999264"
-            message="Hello, I have a question."
+            phoneNumber="6287785213604"
+            message="Halo kak, saya ingin bertanya tentang layanan Reketek Arwana"
           />
           <MailToLink
             email="sulkhangalangsakti@gmail.com"
@@ -88,9 +88,9 @@ let Footer = () => {
           />
         </div>  
 
-        <p className="text-[#474747] tracking-wide">© 2023 Ramen Ramen</p>
+        <p className="text-[#474747] tracking-wide">© 2023 REKETEK ARWANA</p>
         <p className="text-[#6e6e6e] tracking-wide">
-          Designed by Ramen Creative Lab
+          Web Design by s.g.sakti
         </p>
       </div>
     </div>
