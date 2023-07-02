@@ -3,13 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "../index.css";
 import backgroundSectionTwo from "../assets/image/images9.jpg";
 import logoColor from "../assets/image/logo-reketek.png";
-import MoonLoader from "react-spinners/MoonLoader";
 import backgroundHomepage from "../assets/image/images10.jpg";
 import cardImageOne from "../assets/image/image6.jpg";
 import cardImageTwo from "../assets/image/image2.jpg";
 import cardImageThree from "../assets/image/image7.jpg";
-import logoIcon from "../assets/image/logo-icon.png";
-import imageCard from "../assets/image/bg-section-12.jpg";
+import cardImageFour from "../assets/image/image8.jpg";
+
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -194,7 +193,7 @@ let Homepage = () => {
             <div className="h-[80vh] absolute inset-0 bg-image-navbar opacity-40 -z-20"></div>
             <div className=" absolute inset-0 bg-black opacity-70 -z-10"></div>
             <img
-              src={backgroundHomepage}
+              src={cardImageFour}
               className="absolute h-[80vh] w-full object-cover inset-0 -z-30"
             />
 

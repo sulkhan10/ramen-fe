@@ -13,9 +13,7 @@ import {
 } from "react-icons/io5";
 import { useMediaQuery } from "react-responsive";
 import backgroundMenu from "../assets/image/image3.jpg";
-import cardMenuOne from "../assets/image/card-menu-1.jpg";
-import cardMenuTwo from "../assets/image/card-menu-2.jpg";
-import MoonLoader from "react-spinners/MoonLoader";
+
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -24,15 +22,10 @@ import backgroundSectionTwo from "../assets/image/images9.jpg";
 
 import cardImageOne from "../assets/image/image1.jpg";
 import cardImageTwo from "../assets/image/image2.jpg";
-import cardImageThree from "../assets/image/image3.jpg";
 import cardImageFour from "../assets/image/image4.jpg";
-import cardImageFive from "../assets/image/image5.jpg";
-import cardImageSix from "../assets/image/image6.jpg";
-import cardImageSeven from "../assets/image/image7.jpg";
+
 import cardImageEight from "../assets/image/image8.jpg";
-import cardImageNine from "../assets/image/images9.jpg";
-import cardImageTen from "../assets/image/images10.jpg";
-import cardImageEleven from "../assets/image/images11.jpg";
+
 import logoIcon from "../assets/image/logo-reketek-grey.png";
 
 AOS.init();

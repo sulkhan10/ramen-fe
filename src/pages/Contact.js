@@ -6,53 +6,21 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 import backgroundAbout from "../assets/image/images11.jpg";
-import backgroundForm from "../assets/image/background-form.jpg";
-import backgroundSectionOne from "../assets/image/bg-section-1.jpg";
+
 import backgroundSectionTwo from "../assets/image/images9.jpg";
-import backgroundSectionThree from "../assets/image/bg-section-3.jpg";
-import backgroundSectionFour from "../assets/image/bg-section-4.jpg";
-import backgroundSectionFive from "../assets/image/bg-section-5.jpg";
-import backgroundSectionSix from "../assets/image/bg-section-6.jpg";
-import backgroundSectionSeven from "../assets/image/bg-section-7.jpg";
-import backgroundSectionEight from "../assets/image/bg-section-8.jpg";
-import backgroundSectionNine from "../assets/image/bg-section-9.jpg";
-import backgroundSectionTen from "../assets/image/bg-section-10.jpg";
-import backgroundSectionEleven from "../assets/image/bg-section-11.jpg";
-import cardImageOne from "../assets/image/image1.jpg";
-import cardImageTwo from "../assets/image/image2.jpg";
-import cardImageThree from "../assets/image/image3.jpg";
-import cardImageFour from "../assets/image/image4.jpg";
-import cardImageFive from "../assets/image/image5.jpg";
-import cardImageSix from "../assets/image/image6.jpg";
-import cardImageSeven from "../assets/image/image7.jpg";
-import cardImageEight from "../assets/image/image8.jpg";
-import cardImageNine from "../assets/image/images9.jpg";
-import cardImageTen from "../assets/image/images10.jpg";
+
 import cardImageEleven from "../assets/image/images11.jpg";
 import logoIcon from "../assets/image/logo-reketek.png";
 
-import { CSSTransition } from "react-transition-group";
-import { Transition } from "react-transition-group";
+
 import {
   IoLogoInstagram,
   IoLogoWhatsapp,
   IoMailOutline,
 } from "react-icons/io5";
-import SimpleMap from "../components/Map";
 AOS.init();
 
 let Contact = () => {
-  let [loading, setLoading] = useState(true);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-  };
-  useEffect(() => {
-    setLoading(true);
-    // setLoading(false);
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
 
   const MailToLink = ({ email, subject, body }) => {
     const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(

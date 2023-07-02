@@ -1,71 +1,17 @@
 import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-import MoonLoader from "react-spinners/MoonLoader";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
-import backgroundAbout from "../assets/image/background-about.jpg";
-import backgroundSectionOne from "../assets/image/bg-section-1.jpg";
-import backgroundSectionTwo from "../assets/image/bg-section-2.jpg";
-import backgroundSectionThree from "../assets/image/bg-section-3.jpg";
-import backgroundSectionFour from "../assets/image/bg-section-4.jpg";
-import backgroundSectionFive from "../assets/image/bg-section-5.jpg";
-import backgroundSectionSix from "../assets/image/bg-section-6.jpg";
-import backgroundSectionSeven from "../assets/image/bg-section-7.jpg";
-import backgroundSectionEight from "../assets/image/bg-section-8.jpg";
-import backgroundSectionNine from "../assets/image/bg-section-9.jpg";
-import backgroundSectionTen from "../assets/image/bg-section-10.jpg";
-import backgroundSectionEleven from "../assets/image/bg-section-11.jpg";
-import cardImageOne from "../assets/image/card-about-1.jpg";
-import cardImageTwo from "../assets/image/card-about-2.jpg";
-import cardImageThree from "../assets/image/card-about-3.jpg";
-import logoIcon from "../assets/image/logo-icon.png";
-import { CSSTransition } from "react-transition-group";
-import { Transition } from "react-transition-group";
+import backgroundAbout from "../assets/image/image4.jpg";
+import backgroundSectionTwo from "../assets/image/images9.jpg";
 
-// import { useTransition, animated } from "react-spring";
 
 AOS.init();
 
 let About = () => {
-  let [loading, setLoading] = useState(true);
-  const [currentStep, setCurrentStep] = useState(1);
-  const [stepBefore, setStepBefore] = useState(0);
 
-  const handleStepClick = (step) => {
-    // AOS.refresh();
-    setStepBefore(currentStep);
-    setCurrentStep(step);
-  };
-  // const transitions = useTransition(currentStep, null, {
-  //   from: { opacity: 0, transform: "translateX(-100%)" },
-  //   enter: { opacity: 1, transform: "translateX(0%)" },
-  //   leave: { opacity: 0, transform: "translateX(100%)" },
-  // });
-  const getImageUrlByStep = (step) => {
-    // Kode untuk mengambil URL gambar berdasarkan langkah
-    // Ganti dengan logika yang sesuai dengan langkah-langkah Anda
-    switch (step) {
-      case 1:
-        return cardImageOne;
-      case 2:
-        return cardImageTwo;
-      case 3:
-        return cardImageThree;
-      case 4:
-        return backgroundSectionFour;
-      case 5:
-        return backgroundSectionFive;
-      default:
-        return "";
-    }
-  };
-  useEffect(() => {
-    setLoading(true);
-    // setLoading(false);
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
   return (
     <div className="min-h-screen bg-[#f1eee9] flex flex-col  justify-center items-center text-md text-[#717171]">
       <img
@@ -91,45 +37,24 @@ let About = () => {
           style={{ zIndex: -1 }}
         ></div>
         <div className="w-full md:w-3/4 ">
-          <h2 className="text-xl md:text-3xl font-bold mt-2  md:mt-6 text-center">
-            The Idea Behind Ramen Restaurant G:
+          <h2 className="text-2xl md:text-4xl font-bold mt-2  md:mt-6 text-center">
+            Reketek Arwana
           </h2>
-          <h2 className="text-3xl font-bold mb-4 md:mb-6 text-center">
-            Celebrating Food and Culture
-          </h2>
-          <p className="text-lg mb-4 text-center">
-            Ramen Restaurant G is a culinary venture that originated from a deep
-            passion for exceptional food and rich cultural experiences. We
-            believe that food has the power to bring people together and create
-            memorable moments.
-          </p>
-          <p className="text-lg mb-4 text-center">
-            Our journey began with a genuine appreciation for the diverse
-            culinary traditions across different cultures. We wanted to create a
-            space where food enthusiasts could explore and indulge in a wide
-            range of flavors, while also celebrating the cultural heritage
-            behind each dish.
-          </p>
-          <p className="text-lg mb-4 text-center">
-            At Ramen Restaurant G, we pay homage to the culinary arts and
-            cultural traditions that have shaped our menu. We meticulously
-            curate our ingredients, sourcing them from local farmers and
-            suppliers who share our commitment to quality and sustainability.
-          </p>
-          {/* <p className="text-lg mb-4">
-            Our chefs and culinary experts are dedicated to crafting dishes that
-            highlight the authenticity and depth of flavors from various
-            culinary traditions. From traditional recipes handed down through
-            generations to innovative fusion creations, our menu is a reflection
-            of our passion for culinary excellence.
-          </p> */}
-          <p className="text-lg mb-4 text-center">
-            We invite you to join us on a gastronomic adventure where you can
-            savor the remarkable flavors, aromas, and textures of our carefully
-            curated dishes. Each bite at Ramen Restaurant G is a journey through
-            culinary traditions, allowing you to experience the rich tapestry of
-            flavors that our diverse world has to offer.
-          </p>
+          <h2 className="text-xl md:text-2xl font-bold mb-4 mt-2 md:mb-6 text-center">
+          Toko Ikan Arwana Reliable, Terjangkau, Handal       </h2>
+          <p className="text-lg mb-4 text-justify sm:text-center">
+  &nbsp; Selamat datang di Toko Ikan Arwana Kami - destinasi terbaik bagi pecinta ikan arwana. Kami menawarkan kualitas terbaik dalam penjualan ikan arwana eksotis serta layanan perawatan dan pengobatan yang profesional.
+</p>
+<p className="text-lg mb-4 text-justify sm:text-center">
+  &nbsp; Dedikasi kami terhadap kualitas dan keindahan ikan arwana membawa kami pada pengalaman yang tak tertandingi. Jadikan kami mitra terpercaya Anda dalam memilih ikan arwana berkualitas tinggi yang akan mempercantik akuarium Anda.
+</p>
+<p className="text-lg mb-4 text-justify sm:text-center">
+  &nbsp; Bersama kami, Anda akan menemukan berbagai jenis ikan arwana yang memukau dengan warna dan corak yang menakjubkan. Kami juga menyediakan layanan pengobatan dan perawatan terbaik untuk memastikan kesehatan ikan arwana kesayangan Anda.
+</p>
+<p className="text-lg mb-4 text-justify sm:text-center">
+  &nbsp; Kami dengan bangga menyediakan layanan penjualan ikan arwana eksotis dan perawatan khusus untuk menjaga kesehatan dan keindahan ikan arwana Anda. Kami berkomitmen untuk memberikan pengalaman yang alami, memuaskan, dan profesional dalam merawat ikan arwana Anda. Dari pemberian pakan yang tepat hingga pengobatan yang sesuai, tim kami siap memberikan perawatan yang optimal untuk ikan arwana kesayangan Anda.
+</p>
+
         </div>
       </div>
 
