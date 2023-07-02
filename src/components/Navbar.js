@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../index.css";
 import backgroundNavbar from "../assets/image/background-navbar.jpg";
-import logoWhite from "../assets/image/logo-white.png";
-import logoColor from "../assets/image/logo-color.png";
+import logoWhite from "../assets/image/logo-reketek-white.png";
+import logoColor from "../assets/image/logo-reketek.png";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -83,7 +83,9 @@ const Navbar = () => {
           className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass} z-50`}
         >
           <NavLink to="/">
-            {scrolled && <img className="w-30 h-12" src={logoColor} />}
+            {scrolled && 
+            
+            <img className="w-30 h-12" src={logoColor} />}
             {!scrolled && <img className="w-30 h-12" src={logoWhite} />}{" "}
           </NavLink>
           <button
@@ -202,22 +204,23 @@ const Navbar = () => {
               </div>
 
               <ul className="min-h-screen flex flex-col items-center justify-center gap-6 pb-[20vh]">
-                <li>
-                  <NavLink
-                    to="/reservation"
-                    className={inactiveClassnameMobile}
-                    onClick={toggleMobileMenu}
-                  >
-                    Reservation
-                  </NavLink>
-                </li>
+              <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeClassName : inactiveClassname
+                }
+              >
+                Home
+              </NavLink>
+            </li>
                 <li>
                   <NavLink
                     to="/menu"
                     className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
-                    Menu
+                    Layanan
                   </NavLink>
                 </li>
                 <li>
@@ -226,7 +229,7 @@ const Navbar = () => {
                     className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
-                    Contact
+                    Kontak
                   </NavLink>
                 </li>
                 <li>
@@ -235,7 +238,7 @@ const Navbar = () => {
                     className={inactiveClassnameMobile}
                     onClick={toggleMobileMenu}
                   >
-                    About
+                    Tentang Kami
                   </NavLink>
                 </li>
               </ul>
@@ -253,7 +256,9 @@ const Navbar = () => {
         >
           {" "}
           <NavLink to="/">
-            {scrolled && <img className="h-12" src={logoColor} />}
+            {scrolled && 
+            <img className="h-16 mb-2" src={logoColor} />
+            }
             {!scrolled && <img className="h-20 mb-4" src={logoWhite} />}{" "}
           </NavLink>
           <ul
@@ -262,12 +267,12 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/reservation"
+                to="/"
                 className={({ isActive }) =>
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Reservation
+                Home
               </NavLink>
             </li>
             <li>
@@ -277,7 +282,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Menu
+                Layanan
               </NavLink>
             </li>
             <li>
@@ -287,7 +292,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Contact
+                Kontak
               </NavLink>
             </li>
             <li>
@@ -297,7 +302,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                About
+                Tentang Kami
               </NavLink>
             </li>
           </ul>
@@ -322,12 +327,12 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/reservation"
+                to="/"
                 className={({ isActive }) =>
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Reservation
+                Home
               </NavLink>
             </li>
             <li>
@@ -337,7 +342,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Menu
+                Layanan
               </NavLink>
             </li>
             <li>
@@ -347,7 +352,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                Contact
+                Kontak
               </NavLink>
             </li>
             <li>
@@ -357,7 +362,7 @@ const Navbar = () => {
                   isActive ? activeClassName : inactiveClassname
                 }
               >
-                About
+                Tentang Kami
               </NavLink>
             </li>
           </ul>
