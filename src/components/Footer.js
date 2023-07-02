@@ -84,7 +84,7 @@ let Footer = () => {
           <MailToLink
             email="sulkhangalangsakti@gmail.com"
             subject="Hello"
-            body="I'm interested in your services"
+            body="Halo kak, saya ingin bertanya tentang layanan Reketek Arwana"
           />
         </div>  
 

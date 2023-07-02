@@ -303,12 +303,12 @@ const Menu = () => {
       >
         <div
           data-aos="fade-right"
-          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px]"
+          className="sm:w-2/5 h-full flex items-center text-[#717171] justify-center sm:h-[685px] hidden sm:block"
         >
           <img
             src={cardImageFour}
             alt="background"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover "
           />
         </div>
 
@@ -317,25 +317,29 @@ const Menu = () => {
           className="sm:w-3/5 h-full  text-[#717171]  mx-12  sm:h-[685px]  overflow-scroll scrollbar-hide"
         >
           <div className="text-[#717171] ">
-          <div className="flex my-6">
-  <img src={logoIcon} alt="logo" className="w-20 h-20 mr-8" />
-  <h2 className="text-3xl font-bold my-6 ">
-    Titip Ikan Arwana 
-  </h2>
-</div>
+            <div className="flex my-6">
+              <img src={logoIcon} alt="logo" className="w-20 h-20 mr-8" />
+              <h2 className="text-3xl font-bold my-6 ">Titip Ikan Arwana</h2>
+            </div>
 
-
-<p className="text-lg md:text-lg mb-4">
-  Kami mengerti bahwa keamanan dan kenyamanan ikan arwana Anda sangat penting. Oleh karena itu, kami akan memberikan perhatian penuh dan memastikan bahwa ikan arwana Anda mendapatkan perawatan terbaik selama Anda tidak berada di sana.
-</p>
-<p className="text-lg md:text-lg mb-4">
-  Anda dapat menitipkan ikan Anda kepada kami dengan keyakinan bahwa ikan Anda akan dalam kondisi yang prima sampai Anda mengambilnya kembali. Kami memiliki fasilitas yang aman dan lingkungan yang mendukung bagi ikan arwana Anda selama Anda tidak dapat merawatnya sendiri. Kepercayaan Anda adalah prioritas kami, dan kami akan menjaga kesehatan dan keindahan ikan arwana Anda dengan penuh dedikasi.
-</p>
-
+            <p className="text-lg md:text-lg mb-4">
+              Kami mengerti bahwa keamanan dan kenyamanan ikan arwana Anda
+              sangat penting. Oleh karena itu, kami akan memberikan perhatian
+              penuh dan memastikan bahwa ikan arwana Anda mendapatkan perawatan
+              terbaik selama Anda tidak berada di sana.
+            </p>
+            <p className="text-lg md:text-lg mb-4">
+              Anda dapat menitipkan ikan Anda kepada kami dengan keyakinan bahwa
+              ikan Anda akan dalam kondisi yang prima sampai Anda mengambilnya
+              kembali. Kami memiliki fasilitas yang aman dan lingkungan yang
+              mendukung bagi ikan arwana Anda selama Anda tidak dapat merawatnya
+              sendiri. Kepercayaan Anda adalah prioritas kami, dan kami akan
+              menjaga kesehatan dan keindahan ikan arwana Anda dengan penuh
+              dedikasi.
+            </p>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

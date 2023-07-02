@@ -79,7 +79,7 @@ const Navbar = () => {
       {screenWidth <= 768 && !isMobileMenuOpen && scrolled && (
         <div
         data-aos="fade-down"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
           className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass} z-50`}
         >
           <NavLink to="/">
@@ -127,7 +127,7 @@ const Navbar = () => {
       {screenWidth <= 768 && !isMobileMenuOpen && !scrolled && (
         <div
         data-aos="fade-down"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
           className={`fixed  right-0 left-0 z-10 py-2 flex  justify-around items-center ${navbarBackgroundClass}  z-50`}
         >
           <NavLink to="/">
@@ -174,7 +174,7 @@ const Navbar = () => {
       {isMobileMenuOpen && screenWidth <= 768 && (
         <div  className=" ">
           <div   data-aos="fade-down "
-        data-aos-duration="3000" className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-50">
+        data-aos-duration="1000" className=" fixed inset-0 flex flex-col bg-image-navbar-mobile scrollbar-hide z-50">
             <div className="relative py-2">
               <div className="min-h-screen absolute inset-0 bg-image-navbar opacity-50 -z-20"></div>
               <div className=" absolute inset-0 bg-black opacity-70 -z-10"></div>
@@ -207,9 +207,8 @@ const Navbar = () => {
               <li>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : inactiveClassname
-                }
+                className={inactiveClassnameMobile}
+                onClick={toggleMobileMenu}
               >
                 Home
               </NavLink>
@@ -249,7 +248,7 @@ const Navbar = () => {
       {screenWidth > 768 && scrolled && (
         <div
         data-aos="fade-down"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
 
 
           className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}  z-50`}
@@ -311,7 +310,7 @@ const Navbar = () => {
       {screenWidth > 768 && !scrolled && (
         <div
         data-aos="fade-down"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
 
 
           className={`fixed h-32 right-0 left-0 z-10 py-4 flex flex-col justify-between items-center ${navbarBackgroundClass}  z-50 `}
